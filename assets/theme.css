@@ -196,3 +196,64 @@ body{background:var(--theme-page);color:var(--theme-text);transition:background-
 .gcash-original-details{margin-top:11px}
 .gcash-original-details summary{cursor:pointer;color:var(--theme-accent);font-weight:650;font-size:12px;line-height:1.5;padding:10px 0}
 .gcash-original-details img{width:min(100%,290px);height:auto;aspect-ratio:1080/2041;background:#fff;margin:12px auto 4px;border-radius:11px}
+
+
+/* v1.8: fix 404 CTA contrast in dark mode and add contact icons. */
+.error-home-link.button.dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  min-height: 50px;
+  padding: 12px 21px;
+  background: #18211b;
+  border-color: #18211b;
+  color: #ffffff;
+  font-weight: 750;
+}
+.error-home-link.button.dark:hover {
+  background: #294132;
+  border-color: #294132;
+  color: #ffffff;
+}
+:root[data-theme="dark"] .error-home-link.button.dark {
+  background: #e9f2eb;
+  border-color: #e9f2eb;
+  color: #111a14;
+}
+:root[data-theme="dark"] .error-home-link.button.dark:hover {
+  background: #a4e7c9;
+  border-color: #a4e7c9;
+  color: #101a13;
+}
+.error-home-link.button.dark:focus-visible {
+  outline: 3px solid var(--theme-focus);
+  outline-offset: 3px;
+}
+.contact-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.contact-card-icon {
+  display: inline-flex;
+  flex: 0 0 43px;
+  width: 43px;
+  height: 43px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: var(--theme-raised);
+  border: 1px solid var(--theme-stroke);
+  color: var(--theme-accent);
+}
+.contact-card-top .card-label {
+  line-height: 1.5;
+}
+.contact-card:hover .contact-card-icon {
+  border-color: var(--theme-accent);
+}
+@media (max-width: 380px) {
+  .contact-card-icon { flex-basis: 39px; width: 39px; height: 39px; }
+  .contact-card-top { gap: 10px; }
+}
