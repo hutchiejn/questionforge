@@ -189,3 +189,8 @@ QuestionForge is an independent project and is **not affiliated with OpenAI, Goo
 <div align="center">
   <sub>© 2026 QuestionForge · Built to help teachers create better-organized assessments.</sub>
 </div>
+
+
+## Mobile experience update (v1.7)
+
+The site now has improved mobile navigation, a swipeable product preview, tap-friendly buttons, compact help-page navigation, and responsive GCash support. See [MOBILE_UPDATE.md](MOBILE_UPDATE.md). No framework or build command is required.

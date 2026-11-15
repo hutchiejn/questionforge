@@ -2,19 +2,46 @@
   const toggle = document.querySelector('[data-menu-toggle]');
   const nav = document.getElementById('site-navigation');
   if (toggle && nav) {
+    const backdrop = document.querySelector('[data-nav-scrim]');
+    const label = toggle.querySelector('.menu-label');
+    const closeMenu = (restoreFocus = false) => {
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Open navigation menu');
+      if (label) label.textContent = 'Menu';
+      nav.classList.remove('open');
+      document.body.classList.remove('mobile-nav-open');
+      if (restoreFocus) toggle.focus();
+    };
+    const openMenu = () => {
+      toggle.setAttribute('aria-expanded', 'true');
+      toggle.setAttribute('aria-label', 'Close navigation menu');
+      if (label) label.textContent = 'Close';
+      nav.classList.add('open');
+      document.body.classList.add('mobile-nav-open');
+      const firstLink = nav.querySelector('a');
+      firstLink?.focus();
+    };
     toggle.addEventListener('click', () => {
-      const expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!expanded));
-      toggle.textContent = expanded ? 'Menu ☰' : 'Close ×';
-      nav.classList.toggle('open', !expanded);
+      nav.classList.contains('open') ? closeMenu(true) : openMenu();
     });
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape' && nav.classList.contains('open')) {
-        nav.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-        toggle.textContent = 'Menu ☰';
-        toggle.focus();
+    backdrop?.addEventListener('click', () => closeMenu(true));
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => closeMenu()));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && nav.classList.contains('open')) closeMenu(true);
+      if (event.key === 'Tab' && nav.classList.contains('open') && window.innerWidth <= 760) {
+        const nodes = Array.from(nav.querySelectorAll('a:not([tabindex="-1"])'));
+        const first = nodes[0], last = nodes[nodes.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last?.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first?.focus();
+        }
       }
+    });
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 760 && nav.classList.contains('open')) closeMenu();
     });
   }
   // Theme state is shared across all pages. If storage is unavailable, toggle still works for this page.
