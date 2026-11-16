@@ -1,0 +1,41 @@
+/* QuestionForge v2.1 — Instrument Sans typography
+   Hosted through Google Fonts; fallback is local system sans-serif.
+   No font binaries are bundled with this repository. */
+:root {
+  --font: "Instrument Sans", "Segoe UI Variable", "Segoe UI", Arial, sans-serif;
+  --heading-font: "Instrument Sans", "Segoe UI Variable", "Segoe UI", Arial, sans-serif;
+}
+html { font-synthesis: none; }
+body { font-family: var(--font); font-weight: 400; }
+button, input, select, textarea { font-family: inherit; }
+h1, h2, h3, h4, .brand, .nav, .button, .hero-primary, .hero-text-link {
+  font-family: var(--heading-font);
+}
+.brand { font-weight: 700; letter-spacing: -.045em; }
+.nav a { font-weight: 600; }
+.section h2, .bottom-cta h2, .page-hero h1 { font-weight: 700; }
+.feature h3, .contact-card strong, .article h2, .article h3 { font-weight: 700; }
+.article p, .article li { font-weight: 400; }
+.home-page .home-hero h1 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  letter-spacing: -.061em;
+  line-height: 1.015;
+}
+.home-page .home-chapter h2,
+.home-page .home-demo h2,
+.home-page .home-steps h2,
+.home-page .home-privacy h2 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  letter-spacing: -.049em;
+}
+.home-page .home-step-list h3 {font-weight: 650; letter-spacing: -.025em;}
+.home-button,.home-demo-tab,.home-quiet-link,.home-inline-cta {font-weight: 600;}
+.home-deck, .home-chapter-copy>p, .home-demo-intro>p, .home-steps-heading>p {
+  font-weight: 400;
+}
+/* Keep the existing monospace micro-labels, indexes, and code styling. */
+@media(max-width:760px){
+  .home-page .home-hero h1 { letter-spacing:-.053em; line-height:1.035; }
+}

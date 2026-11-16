@@ -1,3 +1,5 @@
+> **Homepage refreshed in v1.9:** Editorial design with real QuestionForge previews, light/dark support, responsive layout, and interactive Review/Final paper switch. See [`HOMEPAGE_UPDATE_v1.9.md`](HOMEPAGE_UPDATE_v1.9.md).
+
 <div align="center">
   <img src="assets/qf-mark-light.svg" alt="QuestionForge QF logo" width="76" height="76" />
 
@@ -85,7 +87,7 @@ This website is intentionally simple:
 | Hosting | Static hosting, including Vercel |
 | Runtime services | No application server, database, or account system |
 
-There is **no npm install or build step** for the website, and no third-party analytics SDK, advertising SDK, or remote font dependency. The site does remember your light/dark theme preference in browser local storage. The hosting provider may maintain its own technical access logs.
+There is **no npm install or build step** for the website, and no third-party analytics SDK or advertising SDK. The website loads Instrument Sans from Google Fonts, with a system-font fallback if unavailable. The site does remember your light/dark theme preference in browser local storage. The hosting provider may maintain its own technical access logs.
 
 ### Repository structure
 
@@ -194,3 +196,10 @@ QuestionForge is an independent project and is **not affiliated with OpenAI, Goo
 ## Mobile experience update (v1.7)
 
 The site now has improved mobile navigation, a swipeable product preview, tap-friendly buttons, compact help-page navigation, and responsive GCash support. See [MOBILE_UPDATE.md](MOBILE_UPDATE.md). No framework or build command is required.
+
+
+## Typography (v2.1)
+
+QuestionForge uses **Instrument Sans** (OFL-1.1) for display headings, body copy, and navigation, while technical labels retain the system monospace stack. Fonts are loaded from Google Fonts on the website; no font binaries are included in the repository. The privacy policy discloses the request to Google Fonts.
+
+The font is optional for functionality: the site remains usable if a visitor blocks remote fonts.
