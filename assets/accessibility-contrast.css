@@ -1,0 +1,189 @@
+/* QuestionForge — theme-aware contrast and documentation emphasis.
+   Overrides the Figma layer only where foreground/background pairs were ambiguous. */
+
+/* The same semantic CTA treatment in both themes; state must never depend on inherited text color. */
+body.figma-site .header-download,
+body.figma-site .home-button--dark,
+body.figma-site .button.dark,
+body.figma-site .release-card-download {
+  background: #0b120e;
+  border-color: #0b120e;
+  color: #ffffff;
+}
+body.figma-site .header-download:hover,
+body.figma-site .home-button--dark:hover,
+body.figma-site .button.dark:hover,
+body.figma-site .release-card-download:hover {
+  background: #006c47;
+  border-color: #006c47;
+  color: #ffffff;
+}
+body.figma-site .button.green,
+body.figma-site .faq-support-links .button.green {
+  background: #006f4a;
+  border-color: #006f4a;
+  color: #ffffff;
+}
+body.figma-site .button.green:hover,
+body.figma-site .faq-support-links .button.green:hover {
+  background: #00563b;
+  border-color: #00563b;
+  color: #ffffff;
+}
+body.figma-site .copy-sha {
+  background: #ffffff;
+  color: #122519;
+  border-color: #a6b7a9;
+}
+body.figma-site .copy-sha:hover {background:#e7f2e9;border-color:#006c47;color:#005b3e}
+body.figma-site .faq-filter-items button:focus-visible,
+body.figma-site .home-demo-tab:focus-visible {outline:3px solid #49bb8b;outline-offset:3px}
+body.figma-site .faq-filter-items button.selected {background:#0b120e;border-color:#0b120e;color:#fff}
+body.figma-site .faq-filter-items button:not(.selected):hover {background:#e7f2e9;color:#005c3e}
+body.figma-site .faq-heading-row>button:hover {color:#006c47}
+body.figma-site .faq-support-links .button.outline {color:#eff9f1;border-color:#788d7c;background:transparent}
+body.figma-site .faq-support-links .button.outline:hover {color:#fff;border-color:#8cf8c0;background:#213327}
+body.figma-site .home-demo-tab:not(.active) {background:#24342a;color:#eff8f1;border-color:#526759}
+body.figma-site .home-demo-tab:not(.active):hover {background:#31513a;color:#fff}
+body.figma-site .home-demo-tab.active {background:#006f4a;border-color:#006f4a;color:#fff}
+body.figma-site .home-demo-tab.active:hover {background:#00815a;border-color:#00815a;color:#fff}
+body.figma-site .home-demo-tab span {color:inherit}
+body.figma-site .menu-toggle {color:#13291c;background:#fff;border-color:#a9b9ad}
+body.figma-site .theme-switch:hover {background:#eaf4ec;color:#005c40;border-color:#006c47}
+
+/* Callouts, code and important workflow terms have explicit readable foregrounds. */
+body.figma-site .article strong {color:#182b20}
+body.figma-site .article a:not(.button) {color:#006c47;text-underline-offset:3px}
+body.figma-site .article a:not(.button):hover {color:#00452e}
+body.figma-site .article code {background:#e8f1ea;color:#006043;border-color:#c8d9cc}
+body.figma-site .guide-article .callout {background:#e8f5ec;border:1px solid #9bccab;border-left:3px solid #007a50}
+body.figma-site .guide-article .callout p {color:#214f35}
+body.figma-site .guide-article .callout.warning {background:#fff4e1;border-color:#dfc184;border-left-color:#b47a16}
+body.figma-site .guide-article .callout.warning p {color:#593a12}
+body.figma-site .guide-article .qf-keyword,
+body.figma-site .guide-article .qf-important-heading {color:#006c47}
+body.figma-site .guide-article .qf-keyword {font-weight:750}
+body.figma-site .toc a:hover,body.figma-site .toc a.active {color:#00573c}
+body.figma-site .guide-system-note b {color:#14261a}
+body.figma-site .guide-system-note p {color:#4e5c51}
+body.figma-site.page-contact .gcash-donation {background:#f0eee6}
+body.figma-site.page-contact .gcash-donation h2,
+body.figma-site.page-contact .gcash-donation h3 {color:#17221a}
+body.figma-site.page-contact .gcash-donation p,
+body.figma-site.page-contact .gcash-donation li,
+body.figma-site.page-contact .gcash-donation .note {color:#4c5a4f}
+body.figma-site.page-contact .gcash-download {background:#0b120e;color:#fff;border-color:#0b120e}
+body.figma-site.page-contact .gcash-download:hover {background:#006c47;color:#fff;border-color:#006c47}
+body.figma-site .footer .support-button--donate:hover {border-color:#9ff7c5;color:#fff;background:#183325}
+
+/* Dark is a complete palette, not light-mode cards with pale text. */
+:root[data-theme=dark] body.figma-site .header-download,
+:root[data-theme=dark] body.figma-site .home-button--dark,
+:root[data-theme=dark] body.figma-site .button.dark,
+:root[data-theme=dark] body.figma-site .release-card-download,
+:root[data-theme=dark] body.figma-site .error-home-link {
+  background:#007a50 !important;
+  border-color:#007a50 !important;
+  color:#fff !important;
+}
+:root[data-theme=dark] body.figma-site .header-download:hover,
+:root[data-theme=dark] body.figma-site .home-button--dark:hover,
+:root[data-theme=dark] body.figma-site .button.dark:hover,
+:root[data-theme=dark] body.figma-site .release-card-download:hover,
+:root[data-theme=dark] body.figma-site .error-home-link:hover {
+  background:#00613e !important;
+  border-color:#00613e !important;
+  color:#fff !important;
+}
+:root[data-theme=dark] body.figma-site .button.green,
+:root[data-theme=dark] body.figma-site .faq-support-links .button.green {background:#007a50;border-color:#007a50;color:#fff}
+:root[data-theme=dark] body.figma-site .button.green:hover,
+:root[data-theme=dark] body.figma-site .faq-support-links .button.green:hover {background:#00613e;border-color:#00613e;color:#fff}
+:root[data-theme=dark] body.figma-site .theme-switch:hover,
+:root[data-theme=dark] body.figma-site .menu-toggle:hover {background:#263b2e;border-color:#8cf8c0;color:#f3fbf5}
+:root[data-theme=dark] body.figma-site .menu-toggle {background:#19261e;border-color:#4a6350;color:#e9f5eb}
+:root[data-theme=dark] body.figma-site .nav a:not(.nav-cta):hover {color:#9df2be}
+:root[data-theme=dark] body.figma-site .nav a[aria-current=page] {color:#a6f1c7}
+:root[data-theme=dark] body.figma-site .toc {background:#1b2820;border-color:#435547}
+:root[data-theme=dark] body.figma-site .toc strong {color:#afc7b6}
+:root[data-theme=dark] body.figma-site .toc a {
+  color:#d2e1d5;
+  border-left-color:transparent;
+  background:transparent;
+}
+:root[data-theme=dark] body.figma-site .toc a:hover,
+:root[data-theme=dark] body.figma-site .toc a.active {
+  background:#294433;
+  color:#b7f9d0;
+  border-left-color:#77dba4;
+}
+:root[data-theme=dark] body.figma-site .guide-system-note {background:#26372a;border-color:#4f6a55}
+:root[data-theme=dark] body.figma-site .guide-system-note b {color:#e4f5e7}
+:root[data-theme=dark] body.figma-site .guide-system-note p {color:#cfdfd1}
+:root[data-theme=dark] body.figma-site .guide-meta-ribbon,
+:root[data-theme=dark] body.figma-site .guide-meta-ribbon span {color:#d2e0d4}
+:root[data-theme=dark] body.figma-site .guide-meta-ribbon b {color:#f0faf2}
+:root[data-theme=dark] body.figma-site .guide-section-label,
+:root[data-theme=dark] body.figma-site .eyebrow {color:#a8f4c7}
+:root[data-theme=dark] body.figma-site .article strong {color:#f3faf4}
+:root[data-theme=dark] body.figma-site .article a:not(.button) {color:#a6f3c9}
+:root[data-theme=dark] body.figma-site .article a:not(.button):hover {color:#d4ffe2}
+:root[data-theme=dark] body.figma-site .article code {background:#234131;color:#b8ffda;border-color:#426c51}
+:root[data-theme=dark] body.figma-site .guide-article .qf-keyword,
+:root[data-theme=dark] body.figma-site .guide-article .qf-important-heading {color:#9ef5c4}
+:root[data-theme=dark] body.figma-site .guide-article>section>ol>li,
+:root[data-theme=dark] body.figma-site .guide-article>section>ol>li strong:not(.qf-keyword) {color:#f4fbf6}
+:root[data-theme=dark] body.figma-site .guide-article .callout {background:#213b2c;border-color:#467a56;border-left-color:#77dba4}
+:root[data-theme=dark] body.figma-site .guide-article .callout p {color:#e0f4e5}
+:root[data-theme=dark] body.figma-site .guide-article .callout.warning {background:#342b1d;border-color:#936d33;border-left-color:#f0b95d}
+:root[data-theme=dark] body.figma-site .guide-article .callout.warning p {color:#ffe9c0}
+:root[data-theme=dark] body.figma-site .guide-article .release-card-hash-details code {background:transparent;border:0;color:#9df4c4}
+:root[data-theme=dark] body.figma-site .copy-sha {background:#2b4434;color:#f5fff8;border-color:#73917c}
+:root[data-theme=dark] body.figma-site .copy-sha:hover {background:#385b44;color:#fff;border-color:#9cf4bd}
+:root[data-theme=dark] body.figma-site .faq-filter-items button:not(.selected) {background:#23372a;color:#edf6f0;border-color:#55745e}
+:root[data-theme=dark] body.figma-site .faq-filter-items button:not(.selected):hover {background:#31553b;color:#fff;border-color:#9ef5c4}
+:root[data-theme=dark] body.figma-site .faq-filter-items button.selected {background:#007a50;border-color:#007a50;color:#fff}
+:root[data-theme=dark] body.figma-site .faq-heading-row>button {color:#d1e1d4}
+:root[data-theme=dark] body.figma-site .faq-heading-row>button:hover {color:#b0f7d0}
+:root[data-theme=dark] body.figma-site .faq-quick a {color:#e9f5eb;border-color:#536757;background:#23362a}
+:root[data-theme=dark] body.figma-site .faq-quick a:hover {color:#fff;background:#31533c;border-color:#8cf8c0}
+:root[data-theme=dark] body.figma-site .faq-arch-feature b,
+:root[data-theme=dark] body.figma-site .faq-independent b {color:#f2fbf4}
+:root[data-theme=dark] body.figma-site .faq-independent p {color:#cbdacf}
+:root[data-theme=dark] body.figma-site .home-quiet-link {background:#203128;border-color:#5b7562;color:#effaf2}
+:root[data-theme=dark] body.figma-site .home-quiet-link:hover {background:#2e4b39;color:#fff;border-color:#8cf8c0}
+:root[data-theme=dark] body.figma-site .home-demo-tab:not(.active) {background:#23372a;color:#edf5ee;border-color:#56745c}
+:root[data-theme=dark] body.figma-site .home-demo-tab:not(.active):hover {background:#385942;border-color:#a1f4c4;color:#fff}
+:root[data-theme=dark] body.figma-site .home-demo-tab.active {background:#007a50;color:#fff;border-color:#007a50}
+:root[data-theme=dark] body.figma-site .home-demo-note {color:#c6decb}
+:root[data-theme=dark] body.figma-site.page-contact .gcash-donation {background:#202d23;border-color:#4a604e}
+:root[data-theme=dark] body.figma-site.page-contact .gcash-donation h2,
+:root[data-theme=dark] body.figma-site.page-contact .gcash-donation h3 {color:#f4fbf5}
+:root[data-theme=dark] body.figma-site.page-contact .gcash-donation p,
+:root[data-theme=dark] body.figma-site.page-contact .gcash-donation li,
+:root[data-theme=dark] body.figma-site.page-contact .gcash-donation .note {color:#d2e1d5}
+:root[data-theme=dark] body.figma-site.page-contact .gcash-download {background:#007a50;color:#fff;border-color:#007a50}
+:root[data-theme=dark] body.figma-site.page-contact .gcash-download:hover {background:#00613e;color:#fff;border-color:#00613e}
+:root[data-theme=dark] body.figma-site.page-contact .gcash-original-details summary {color:#9ef5c4}
+:root[data-theme=dark] body.figma-site.page-contact .gcash-donation-visual figcaption,
+:root[data-theme=dark] body.figma-site.page-contact .gcash-scan-hint {color:#d2e1d5}
+:root[data-theme=dark] body.figma-site .footer .support-button--donate {color:#f2faf4;border-color:#708c75}
+:root[data-theme=dark] body.figma-site .footer .support-button--donate:hover {background:#23452f;color:#fff;border-color:#a3f6c7}
+@media (max-width:760px) {
+  :root[data-theme=dark] body.figma-site .toc a {border:1px solid #536c59}
+  :root[data-theme=dark] body.figma-site .toc a:hover,
+  :root[data-theme=dark] body.figma-site .toc a.active {border-color:#8cf8c0}
+}
+/* Remaining low-contrast captions/inline links. */
+body.figma-site .gcash-original-details summary {color:#006c47}
+body.figma-site .faq-filter-version {color:#59605a}
+body.figma-site .faq-quick span {color:#56695a}
+:root[data-theme=dark] body.figma-site .faq-filter-version {color:#c3d7c7}
+:root[data-theme=dark] body.figma-site .faq-quick span {color:#d0e1d2}
+:root[data-theme=dark] body.figma-site .faq-independent a {color:#a6f3c9}
+:root[data-theme=dark] body.figma-site .faq-independent a:hover {color:#dcffe8}
+:root[data-theme=dark] body.figma-site .faq-question-number,
+:root[data-theme=dark] body.figma-site .faq-arch-feature .icon {color:#a6f3c9}
+:root[data-theme=dark] body.figma-site .home-chapter-index,
+:root[data-theme=dark] body.figma-site .home-step-list li>span:first-child {color:#a6f3c9}
+:root[data-theme=dark] body.figma-site .footer .note {color:#abbfb0}

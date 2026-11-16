@@ -1,4 +1,4 @@
-> **Homepage refreshed in v1.9:** Editorial design with real QuestionForge previews, light/dark support, responsive layout, and interactive Review/Final paper switch. See [`HOMEPAGE_UPDATE_v1.9.md`](HOMEPAGE_UPDATE_v1.9.md).
+> **Website redesign — Figma reference:** Home, FAQ and User Guide have been redesigned using the provided Figma frames. Privacy, Contact and 404 share the new design system. This website distribution contains no editable extension source or Git history.
 
 <div align="center">
   <img src="assets/qf-mark-light.svg" alt="QuestionForge QF logo" width="76" height="76" />
@@ -87,7 +87,7 @@ This website is intentionally simple:
 | Hosting | Static hosting, including Vercel |
 | Runtime services | No application server, database, or account system |
 
-There is **no npm install or build step** for the website, and no third-party analytics SDK or advertising SDK. The website loads Instrument Sans from Google Fonts, with a system-font fallback if unavailable. The site does remember your light/dark theme preference in browser local storage. The hosting provider may maintain its own technical access logs.
+There is **no npm install or build step** for the website, and no third-party analytics SDK or advertising SDK. The website loads Space Grotesk, Plus Jakarta Sans, and JetBrains Mono from Google Fonts, with system-font fallbacks if unavailable. The site does remember your light/dark theme preference in browser local storage. The hosting provider may maintain its own technical access logs.
 
 ### Repository structure
 
@@ -100,6 +100,9 @@ questionforge-website/
 ├── contact.html              # Support and GCash donations
 ├── 404.html                  # Not-found page
 ├── assets/                   # QF branding, screenshots, CSS, JS, GCash images
+│   ├── figma-redesign.css     # Figma-derived layout and responsive overrides
+│   ├── faq.js                 # Accessible FAQ category filters
+│   ├── guide-redesign.js      # SHA-256 copy and guide TOC state
 │   ├── site.css
 │   ├── theme.css
 │   ├── theme-init.js
