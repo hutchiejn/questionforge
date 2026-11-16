@@ -1,0 +1,18 @@
+# Local credentials or environment / Vercel output
+.env
+.env.*
+!.env.example
+.vercel/
+*.pem
+*.key
+
+# Local testing output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+Thumbs.db
+*.log
+
+# Generated archives outside the intentional versioned extension ZIP
+*.tar.gz

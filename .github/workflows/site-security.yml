@@ -1,0 +1,30 @@
+name: QuestionForge security gate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout website repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check files, headers, and protected GCash hashes
+        env:
+          EXPECTED_QR: ${{ vars.GCASH_QR_SHA256 }}
+          EXPECTED_CARD: ${{ vars.GCASH_CARD_SHA256 }}
+        run: |
+          python tools/security_check.py \
+            --require-external-baseline \
+            --expected-qr "$EXPECTED_QR" \
+            --expected-card "$EXPECTED_CARD"

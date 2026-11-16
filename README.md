@@ -1,7 +1,10 @@
+
+> **Production security release (November 2026):** Vercel serves only `public/`, with a restrictive Content Security Policy, external integrity monitor support, and protected GCash image checks. See [SECURITY_DEPLOYMENT.md](SECURITY_DEPLOYMENT.md) before deploying. The `public/` directory contains the entire public website; the `tools/` directory and release integrity manifest are not deployed.
+
 > **Website redesign — Figma reference:** Home, FAQ and User Guide have been redesigned using the provided Figma frames. Privacy, Contact and 404 share the new design system. This website distribution contains no editable extension source or Git history.
 
 <div align="center">
-  <img src="assets/qf-mark-light.svg" alt="QuestionForge QF logo" width="76" height="76" />
+  <img src="public/assets/qf-mark-light.svg" alt="QuestionForge QF logo" width="76" height="76" />
 
   # QuestionForge
 
@@ -9,7 +12,7 @@
 
   A free, local-first Chrome extension for preparing curriculum-based assessments, reviewing questions, and exporting polished Word and PDF papers.
 
-  [Product overview](index.html) · [Getting started](guide.html) · [FAQ](faq.html) · [Privacy policy](privacy.html) · [Contact & support](contact.html)
+  [Product overview](public/index.html) · [Getting started](public/guide.html) · [FAQ](public/faq.html) · [Privacy policy](public/privacy.html) · [Contact & support](public/contact.html)
 </div>
 
 ---
@@ -26,7 +29,7 @@ QuestionForge **does not generate questions using its own AI model**. It creates
 
 | Review questions | Format an assessment |
 | :---: | :---: |
-| ![QuestionForge question review interface](assets/hero-review-detail.png) | ![Example formatted assessment](assets/hero-paper-sample.png) |
+| ![QuestionForge question review interface](public/assets/hero-review-detail.png) | ![Example formatted assessment](public/assets/hero-paper-sample.png) |
 
 *Screenshots demonstrate the interface and an example paper, not a live interactive demo.*
 
@@ -60,20 +63,20 @@ Multiple choice · Identification · Enumeration · Essay · True or False
 4. **Review** — Import the JSON, inspect question counts and answer keys, and make corrections.
 5. **Export** — Select your document layout and generate a Word file or print to PDF.
 
-See the [step-by-step user guide](guide.html) for the full process and troubleshooting instructions.
+See the [step-by-step user guide](public/guide.html) for the full process and troubleshooting instructions.
 
 ## Install the Chrome extension
 
 QuestionForge is currently provided as a **developer-preview production package**, not an official Chrome Web Store installation.
 
-1. Download [`QuestionForge-v0.8.4-production.zip`](downloads/QuestionForge-v0.8.4-production.zip).
+1. Download [`QuestionForge-v0.8.4-production.zip`](public/downloads/QuestionForge-v0.8.4-production.zip).
 2. Extract it locally.
 3. Open `chrome://extensions` in Chrome.
 4. Turn on **Developer mode** and choose **Load unpacked**.
 5. Select the extracted extension folder containing `manifest.json`.
 6. Open QuestionForge from the browser toolbar or side panel.
 
-For the published archive's SHA-256 fingerprint and installation notes, see [Getting started](guide.html#install). Only install unpacked extensions from sources you trust.
+For the published archive's SHA-256 fingerprint and installation notes, see [Getting started](public/guide.html#install). Only install unpacked extensions from sources you trust.
 
 ## Website technology
 
@@ -93,75 +96,62 @@ There is **no npm install or build step** for the website, and no third-party an
 
 ```text
 questionforge-website/
-├── index.html                # Product landing page
-├── guide.html                # Installation and user guide
-├── faq.html                  # Frequently asked questions
-├── privacy.html              # Public privacy policy
-├── contact.html              # Support and GCash donations
-├── 404.html                  # Not-found page
-├── assets/                   # QF branding, screenshots, CSS, JS, GCash images
-│   ├── figma-redesign.css     # Figma-derived layout and responsive overrides
-│   ├── faq.js                 # Accessible FAQ category filters
-│   ├── guide-redesign.js      # SHA-256 copy and guide TOC state
-│   ├── site.css
-│   ├── theme.css
-│   ├── theme-init.js
-│   ├── site.js
-│   └── ...
-├── downloads/
-│   └── QuestionForge-v0.8.4-production.zip
+├── public/                   # ONLY this directory is published
+│   ├── index.html            # Product landing page
+│   ├── guide.html            # Installation and user guide
+│   ├── faq.html              # Frequently asked questions
+│   ├── privacy.html          # Public privacy policy
+│   ├── contact.html          # Support and official GCash QR
+│   ├── 404.html
+│   ├── assets/               # CSS, JS, branding, GCash images
+│   └── downloads/
+│       └── QuestionForge-v0.8.4-production.zip
+├── tools/                    # Audit scripts, NOT published
+├── .github/workflows/        # Optional CI security gate
+├── release-manifest.json     # Baseline for independent monitoring
+├── vercel.json               # CSP and outputDirectory settings
+├── SECURITY_DEPLOYMENT.md    # Production hardening checklist
 └── README.md
 ```
 
 ## Develop and preview the website locally
 
-You only need a browser and a small local HTTP server. For example, with Python:
+You only need Python and a browser to preview the static pages (this local server does **not** simulate Vercel's production security headers):
 
 ```bash
-cd questionforge-website
+cd questionforge-website/public
 python -m http.server 8000
 ```
 
-Then visit **http://localhost:8000**.
+Visit **http://localhost:8000** and refresh after edits. No npm install or build step is required. The extension production ZIP is a separate, already-built download; editing the website does not rebuild it.
 
-Changes to HTML, CSS, or JavaScript are available after refreshing the page. The extension production ZIP is a separate, already-built download; editing the website does not rebuild the extension.
+To audit the files from the repository root:
+
+```bash
+python tools/security_check.py
+```
 
 ## Deploy to Vercel
 
-**Recommended:** connect a Git repository containing **only this website and the production extension ZIP**. Keep the editable extension source, test suites, private release tooling, secrets, and configuration utilities out of this repository.
+1. Connect the website repository in [Vercel](https://vercel.com/new). **Keep the Vercel Root Directory at the repository root**, where `vercel.json` lives (not inside `public/`).
+2. Choose **Framework Preset: Other**. The included `vercel.json` configures **`outputDirectory: "public"`**. Confirm the Vercel dashboard has no conflicting Build & Output Settings override.
+3. No build command is needed. Deploy to a preview URL, then open the pages and validate CSP headers and donation QR image.
+4. Set up GitHub repository variables for the authorized GCash image checksums and protect the production branch before merging. Full steps: [SECURITY_DEPLOYMENT.md](SECURITY_DEPLOYMENT.md).
+5. Only promote the release after inspecting the preview and verifying that `privacy.html`, `contact.html`, `guide.html` and the download work over HTTPS.
 
-1. Go to [Vercel](https://vercel.com/new) and import the website repository.
-2. Set the **Root Directory** to the folder containing `index.html` (or leave it as the repository root if the website files are at the top level).
-3. Choose **Framework Preset: Other**.
-4. **Skip the build step** — no build command or output-generation script is needed. Serve the website from its root folder.
-5. Deploy, then open the assigned HTTPS URL and check the pages and download.
+> The production website URL is not specified here. Do not invent a domain or a privacy-policy URL when packaging a separate extension release. For extension legal link updates, use your private extension release process; this website ZIP does not contain that private tooling.
 
-> The production website URL is not yet specified here. Do not add a guessed domain or a placeholder privacy-policy URL to the extension.
+### Production release checklist
 
-### After deployment
-
-Verify each live address in your browser:
-
-```text
-https://YOUR-REAL-DOMAIN/privacy.html
-https://YOUR-REAL-DOMAIN/contact.html
-https://YOUR-REAL-DOMAIN/guide.html
-```
-
-Next, configure the **production extension's official-site URL** using the private release tool described in [`LEGAL_LINKS_SETUP.md`](LEGAL_LINKS_SETUP.md). Repackage the production extension, update the website download and SHA-256 value, then redeploy both together.
-
-### Release checklist
-
-- [ ] Confirm that `privacy.html`, `contact.html`, `guide.html`, and the ZIP download load publicly over HTTPS.
-- [ ] Verify the source package is the **production build**, not editable development code or test files.
-- [ ] Recalculate the download's SHA-256 after every release and update its displayed checksum.
-- [ ] Check that the About → Privacy and Contact links open the **real published site**.
-- [ ] Review the privacy policy after changing storage, permissions, uploads, or donation behavior.
-- [ ] Test desktop and mobile layouts in both themes, plus keyboard navigation.
-- [ ] Test the extension in a clean Chrome profile before sharing broadly.
-- [ ] Confirm the GCash QR shows the intended receiving account and disclose any recipient details visible to visitors.
-
-See [`PUBLISH_CHECKLIST.md`](PUBLISH_CHECKLIST.md) for the broader launch checklist.
+- [ ] Review [SECURITY_DEPLOYMENT.md](SECURITY_DEPLOYMENT.md) and enable account MFA/passkeys and branch protections.
+- [ ] Confirm that `vercel.json` applies the restrictive CSP and security headers on production responses.
+- [ ] Confirm the website serves `public/` only; the monitoring scripts and release manifest must not be public URLs.
+- [ ] Verify the GCash receiving QR and card still represent your intended receiving account; protect and monitor the hashes independently.
+- [ ] Confirm that all pages and the production extension ZIP load over HTTPS.
+- [ ] Recalculate the download's SHA-256 after a future extension release and update the guide checksum and independent manifest.
+- [ ] Test the extension's links to the real published Privacy and Contact pages.
+- [ ] Test desktop and mobile layouts, both color themes, keyboard navigation, and visible buttons.
+- [ ] Review all privacy/security notices after any new payment, script, or storage behavior.
 
 ## Privacy and responsible use
 
@@ -171,13 +161,13 @@ Question drafts may be stored in local Chrome extension storage when saving is e
 
 The website is static and has no account-registration or payment-processing system. Optional **GCash** support displays a public receiving QR; payments take place outside QuestionForge. Donations never unlock features. Visitors should confirm the recipient in GCash before transferring funds.
 
-Read the full [Privacy Policy](privacy.html) before distributing the extension to a school or institution.
+Read the full [Privacy Policy](public/privacy.html) before distributing the extension to a school or institution.
 
 ## Support and project links
 
-- **Help and feedback:** [Contact & Support](contact.html)
+- **Help and feedback:** [Contact & Support](public/contact.html)
 - **Developer profile:** [GitHub — xf00889](https://github.com/xf00889)
-- **Optional GCash support:** [Donate via GCash](contact.html#support-the-project)
+- **Optional GCash support:** [Donate via GCash](public/contact.html#support-the-project)
 
 When reporting a problem, include the QuestionForge and Chrome versions, steps to reproduce, and a screenshot **with private student or examination details removed**.
 
