@@ -1,7 +1,7 @@
 /* Security notice and CSP-safe layout utilities; use no inline styles. */
-body.figma-site.page-contact .contact-channels-section { padding-top:70px; }
-body.figma-site.page-contact .contact-article-container { padding:0; }
-body.figma-site.page-contact .gcash-safety-notice {
+body.qforge-site.page-contact .contact-channels-section { padding-top:70px; }
+body.qforge-site.page-contact .contact-article-container { padding:0; }
+body.qforge-site.page-contact .gcash-safety-notice {
   background:#e6eee7;
   border:1px solid #a5c6b3;
   border-left:3px solid #006c47;
@@ -10,13 +10,13 @@ body.figma-site.page-contact .gcash-safety-notice {
   margin:20px 0 10px;
   border-radius:4px;
 }
-body.figma-site.page-contact .gcash-safety-notice h3 { margin:0 0 7px; font-size:15px; color:#102819; }
-body.figma-site.page-contact .gcash-safety-notice p,
-body.figma-site.page-contact .gcash-donation .gcash-safety-notice p { margin:0 0 9px; color:#253c2c; line-height:1.65; font-size:13px; }
-body.figma-site.page-contact .gcash-safety-notice p:last-child {margin-bottom:0;}
-:root[data-theme="dark"] body.figma-site.page-contact .gcash-safety-notice {
+body.qforge-site.page-contact .gcash-safety-notice h3 { margin:0 0 7px; font-size:15px; color:#102819; }
+body.qforge-site.page-contact .gcash-safety-notice p,
+body.qforge-site.page-contact .gcash-donation .gcash-safety-notice p { margin:0 0 9px; color:#253c2c; line-height:1.65; font-size:13px; }
+body.qforge-site.page-contact .gcash-safety-notice p:last-child {margin-bottom:0;}
+:root[data-theme="dark"] body.qforge-site.page-contact .gcash-safety-notice {
   background:#14281d; border-color:#497e60; border-left-color:#8cf8c0; color:#e2f7e9;
 }
-:root[data-theme="dark"] body.figma-site.page-contact .gcash-safety-notice h3 {color:#effcf4;}
-:root[data-theme="dark"] body.figma-site.page-contact .gcash-safety-notice p,
-:root[data-theme="dark"] body.figma-site.page-contact .gcash-donation .gcash-safety-notice p {color:#cbe4d3;}
+:root[data-theme="dark"] body.qforge-site.page-contact .gcash-safety-notice h3 {color:#effcf4;}
+:root[data-theme="dark"] body.qforge-site.page-contact .gcash-safety-notice p,
+:root[data-theme="dark"] body.qforge-site.page-contact .gcash-donation .gcash-safety-notice p {color:#cbe4d3;}

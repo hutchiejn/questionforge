@@ -4,11 +4,11 @@
   "files": [
     {
       "path": "404.html",
-      "sha256": "d1d77e907e0cad75ed57b86dc95bd0330c3b573177aede522fa09a46939c2c7e"
+      "sha256": "c40a4cf2c7840df99df6b8845ca40d9dcb6cfcf2e148c108d989a77b53e49369"
     },
     {
       "path": "assets/accessibility-contrast.css",
-      "sha256": "0527f7559661a8ff49bd2bbeeecc7a932e4e1dcdda3137074fc2c964e593e597"
+      "sha256": "56190c3a07bf9ed7dc9a0b7c998b8eef1c18f3b39d2a19c51644853a3c916c32"
     },
     {
       "path": "assets/brand-mark-dark.svg",
@@ -39,8 +39,8 @@
       "sha256": "f3d8ce1a1923f39895ba3c6fc43e2d649cf248d9404066b22386f3edbaa1028d"
     },
     {
-      "path": "assets/figma-redesign.css",
-      "sha256": "67703c32ce2661558f0a02c693874d4a5a640eda4ac59fb02e8b0575fac6f986"
+      "path": "assets/qforge.css",
+      "sha256": "1e728b1875b54fc74eddcee2aeb0dfee35b57e6ab9d602ddd5e0a54e3e24b568"
     },
     {
       "path": "assets/gcash-receive-card.png",
@@ -116,7 +116,7 @@
     },
     {
       "path": "assets/security.css",
-      "sha256": "e1f7344c19b56a90a224f10a0243832891faec29e7073b900795b1d5eaf6b2b0"
+      "sha256": "fb3f9f28f763bca4312cf60d82ce5e7cdc3356c0c125266daea2d7ca7d8188fa"
     },
     {
       "path": "assets/site.css",
@@ -140,7 +140,7 @@
     },
     {
       "path": "contact.html",
-      "sha256": "f75fbe3c895d2c3920e271ff206e2f58b4d973c86395ede140d772c89413d0f5"
+      "sha256": "b9485ad85748346b9348fbd899bc60f5d5fa91eb12f58a125861524496c97409"
     },
     {
       "path": "downloads/QuestionForge-v0.8.4-production.zip",
@@ -148,19 +148,19 @@
     },
     {
       "path": "faq.html",
-      "sha256": "63c5b278f3b0d71667fbd44c8d6ab39b0c8f61456aa724d44c2ac8ef0f174fe5"
+      "sha256": "29d2dc44903f08d3b4442fb49b24f5e2b616dfb1b6b1762c26b8596aa7f891c7"
     },
     {
       "path": "guide.html",
-      "sha256": "c9424a5f41a9400d9e09a21339d905e4a4869a021fe920e0afef6006f37b3855"
+      "sha256": "51dc9b1d1904b2197ee47623e5671cf4660eb6cf31f0438e0a26e43e71f2384d"
     },
     {
       "path": "index.html",
-      "sha256": "8f95f98436969b9572a0c99ae86df7502018baa932c4abb766a0a63adff6f701"
+      "sha256": "3d1a59325225aa2f56167f042fe676d4c3c7b1703c9963cb8c1b8c638f8e50a4"
     },
     {
       "path": "privacy.html",
-      "sha256": "ad8a0ab26b5518fce8755e363c4281b276a3475bb259c909488556432660f254"
+      "sha256": "b19f792a8a903c4f38a8bfefa5577e3bc82629c55fdac5f637aa8533199654a8"
     }
   ]
 }
