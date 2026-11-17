@@ -1,0 +1,2 @@
+# Release integrity hashes cover served bytes; preserve them across Windows/Linux checkouts.
+public/** -text

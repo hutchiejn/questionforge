@@ -1,0 +1,216 @@
+- main [ref=e2]:
+  - generic [ref=e234]:
+    - generic [ref=e237]:
+      - generic [ref=e238]:
+        - img "QuestionForge" [ref=e239]
+        - generic [ref=e240]: BETA
+      - generic [ref=e241]: QUESTION PAPER STUDIO
+    - generic [ref=e242]:
+      - button "Privacy and security settings" [ref=e243] [cursor=pointer]
+      - button "Switch to light mode" [ref=e247] [cursor=pointer]
+      - button "Load example questions" [ref=e251] [cursor=pointer]
+  - navigation "QuestionForge workflow" [ref=e255]:
+    - button "00. Prompt" [ref=e256] [cursor=pointer]:
+      - generic [ref=e257]: "00."
+      - generic [ref=e258]: Prompt
+    - button "01. Import" [ref=e259] [cursor=pointer]:
+      - generic [ref=e260]: "01."
+      - generic [ref=e261]: Import
+    - button "02. Review" [ref=e262] [cursor=pointer]:
+      - generic [ref=e263]: "02."
+      - generic [ref=e264]: Review
+    - button "03. Export" [ref=e265] [cursor=pointer]:
+      - generic [ref=e266]: "03."
+      - generic [ref=e267]: Export
+  - generic [ref=e269]:
+    - generic [ref=e270]:
+      - generic [ref=e271]: 00 — PREPARE
+      - heading "Build your exam prompt" [level=1] [ref=e272]
+      - paragraph [ref=e273]: Tell ChatGPT what to assess. Then bring the finished questions back here to format.
+    - paragraph [ref=e277]:
+      - strong [ref=e278]: Keep teaching files on this device.
+      - text: Import and verify relevant source text locally, or continue attaching documents in ChatGPT. Only the content you choose to paste is shared.
+    - generic [ref=e279]:
+      - generic [ref=e281]:
+        - generic [ref=e282]: 01 / TEACHING MATERIALS
+        - heading "Choose your source" [level=2] [ref=e283]
+      - paragraph [ref=e287]: Import the material locally, inspect one structured document, and approve it before generating prompts.
+      - radiogroup "How will you provide lesson materials?" [ref=e288]:
+        - generic [ref=e289] [cursor=pointer]:
+          - radio "Import files DOCX, XLSX, PDF, CSV or TXT · processed locally" [checked] [ref=e290]
+          - generic [ref=e291]:
+            - strong [ref=e292]: Import files
+            - generic [ref=e293]: DOCX, XLSX, PDF, CSV or TXT · processed locally
+        - generic [ref=e294] [cursor=pointer]:
+          - radio "Paste text Copy content from a teaching document" [ref=e295]
+          - generic [ref=e296]:
+            - strong [ref=e297]: Paste text
+            - generic [ref=e298]: Copy content from a teaching document
+        - generic [ref=e299] [cursor=pointer]:
+          - radio "Attach in ChatGPT Use file upload if available" [ref=e300]
+          - generic [ref=e301]:
+            - strong [ref=e302]: Attach in ChatGPT
+            - generic [ref=e303]: Use file upload if available
+      - button "Choose teaching documents" [ref=e304] [cursor=pointer]
+      - paragraph [ref=e308]: DOCX/XLSX retain tables and source coordinates. PDFs retain extracted page text, but complex layouts and image-only pages need manual review. 8 MB per file.
+      - paragraph [ref=e309]: No teaching files selected.
+      - paragraph [ref=e310]: Your document is processed locally. Text pasted into ChatGPT will be shared with ChatGPT. Remove personal data first.
+    - generic [ref=e314]:
+      - generic [ref=e316]:
+        - generic [ref=e317]: 01 / START WITH THE LESSON
+        - heading "Assessment details" [level=2] [ref=e318]
+      - generic [ref=e321]:
+        - generic [ref=e322]: What are you using as a guide?
+        - combobox "What are you using as a guide?" [ref=e323]:
+          - option "Topic or lesson title"
+          - option "Lesson plan"
+          - option "Budget of Work (BOW)"
+          - option "Table of Specifications (TOS)"
+          - option "BOW + lesson plan" [selected]
+          - option "Curriculum guide / competencies"
+      - generic [ref=e324]:
+        - generic [ref=e325]:
+          - generic [ref=e326]: Grade / year level
+          - textbox "Grade / year level" [ref=e327]:
+            - /placeholder: e.g. Grade 8
+            - text: Grade 8
+        - generic [ref=e328]:
+          - generic [ref=e329]: Subject
+          - textbox "Subject" [ref=e330]:
+            - /placeholder: e.g. Science
+            - text: Science
+      - generic [ref=e331]:
+        - generic [ref=e332]: Specific topic or focus (optional)
+        - textbox "Specific topic or focus (optional)" [ref=e333]:
+          - /placeholder: e.g. Volcanoes and earthquakes
+      - generic [ref=e334]:
+        - generic [ref=e335]: Quarter / assessment period (optional)
+        - textbox "Quarter / assessment period (optional)" [ref=e336]:
+          - /placeholder: e.g. Quarter 2
+      - generic [ref=e337]:
+        - generic [ref=e338]:
+          - generic [ref=e339]: Total questions
+          - spinbutton "Total questions" [ref=e340]: "40"
+        - generic [ref=e341]:
+          - generic [ref=e342]: Difficulty
+          - combobox "Difficulty" [ref=e343]:
+            - option "Mostly foundational"
+            - option "Balanced" [selected]
+            - option "Higher-order thinking"
+    - generic [ref=e344]:
+      - generic [ref=e345]:
+        - generic [ref=e346]:
+          - generic [ref=e347]: 02 / CHOOSE THE FORMAT
+          - heading "Question types" [level=2] [ref=e348]
+        - generic [ref=e349]: 40 / 40
+      - group "Question type allocation" [ref=e350]:
+        - button "Recommended split" [ref=e351] [cursor=pointer]
+        - button "Set my own counts" [ref=e352] [cursor=pointer]
+      - generic [ref=e353]:
+        - generic [ref=e354]:
+          - generic [ref=e355] [cursor=pointer]:
+            - checkbox "Multiple choice" [checked] [ref=e356]
+            - generic [ref=e357]: Multiple choice
+          - strong [ref=e359]: "22"
+        - generic [ref=e360]:
+          - generic [ref=e361] [cursor=pointer]:
+            - checkbox "Identification" [checked] [ref=e362]
+            - generic [ref=e363]: Identification
+          - strong [ref=e365]: "9"
+        - generic [ref=e366]:
+          - generic [ref=e367] [cursor=pointer]:
+            - checkbox "Enumeration" [checked] [ref=e368]
+            - generic [ref=e369]: Enumeration
+          - strong [ref=e371]: "5"
+        - generic [ref=e372]:
+          - generic [ref=e373] [cursor=pointer]:
+            - checkbox "Essay" [checked] [ref=e374]
+            - generic [ref=e375]: Essay
+          - strong [ref=e377]: "4"
+        - generic [ref=e378]:
+          - generic [ref=e379] [cursor=pointer]:
+            - checkbox "True or False" [ref=e380]
+            - generic [ref=e381]: True or False
+          - strong [ref=e383]: "0"
+      - paragraph [ref=e384]: Counts are suggested and always total your requested questions.
+    - generic [ref=e385]:
+      - generic [ref=e387]:
+        - generic [ref=e388]: 03 / COVERAGE
+        - heading "Topics & thinking skills" [level=2] [ref=e389]
+      - paragraph [ref=e392]: Add topics if you want to guide coverage. ChatGPT should still follow the supplied teaching materials.
+      - generic [ref=e393]:
+        - generic [ref=e394]: Topic distribution
+        - combobox [ref=e395]:
+          - option "Let ChatGPT propose coverage" [selected]
+          - option "Specify questions per topic"
+      - button "Add a topic" [ref=e396] [cursor=pointer]
+      - generic [ref=e400]: Learning objectives (choose at least one)
+      - generic [ref=e401]:
+        - generic [ref=e402]:
+          - checkbox "Remember" [checked] [ref=e403] [cursor=pointer]
+          - generic [ref=e404]: Remember
+        - generic [ref=e405]:
+          - checkbox "Understand" [checked] [ref=e406] [cursor=pointer]
+          - generic [ref=e407]: Understand
+        - generic [ref=e408]:
+          - checkbox "Apply" [checked] [ref=e409] [cursor=pointer]
+          - generic [ref=e410]: Apply
+        - generic [ref=e411]:
+          - checkbox "Analyze" [checked] [ref=e412] [cursor=pointer]
+          - generic [ref=e413]: Analyze
+        - generic [ref=e414]:
+          - checkbox "Evaluate" [ref=e415] [cursor=pointer]
+          - generic [ref=e416]: Evaluate
+        - generic [ref=e417]:
+          - checkbox "Create" [ref=e418] [cursor=pointer]
+          - generic [ref=e419]: Create
+      - generic [ref=e420]:
+        - generic [ref=e421]: Additional teacher instructions (optional)
+        - textbox "Additional teacher instructions (optional)" [ref=e422]:
+          - /placeholder: e.g. Avoid topics not yet discussed; include two real-life situations.
+    - generic [ref=e423]:
+      - generic [ref=e425]:
+        - generic [ref=e426]: 04 / COPY INTO CHATGPT
+        - heading "Two-step workflow" [level=2] [ref=e427]
+      - generic [ref=e431]:
+        - generic [ref=e432]: "1"
+        - generic [ref=e433]:
+          - strong [ref=e434]: Plan the coverage
+          - paragraph [ref=e435]: Copy the planning prompt, paste it in ChatGPT, and review the proposed distribution.
+      - generic [ref=e436]:
+        - generic [ref=e437]: "2"
+        - generic [ref=e438]:
+          - strong [ref=e439]: Approve, then generate
+          - paragraph [ref=e440]:
+            - text: After you approve the plan, copy the exam prompt into the
+            - strong [ref=e441]: same ChatGPT conversation
+            - text: . It will produce import-ready questions.
+      - generic [ref=e442] [cursor=pointer]:
+        - checkbox "I reviewed and approved the coverage plan in ChatGPT." [ref=e443]
+        - generic [ref=e444]: I reviewed and approved the coverage plan in ChatGPT.
+      - generic [ref=e445]:
+        - generic [ref=e446]: Question import format
+        - combobox [ref=e447]:
+          - option "Structured JSON (recommended)" [selected]
+          - option "Plain text (less reliable)"
+        - paragraph [ref=e448]: JSON keeps question types, answers and numbers together. Plain text may be misread if ChatGPT adds tables or an answer key.
+      - generic [ref=e449]: Import and approve at least one teaching document first.
+      - generic [ref=e453]:
+        - button "Copy coverage prompt" [disabled] [ref=e454]
+        - button "Copy exam prompt" [disabled] [ref=e458]
+        - button "Fix an existing ChatGPT exam" [ref=e462] [cursor=pointer]
+      - paragraph [ref=e466]: Already have a wrongly formatted exam? Use the fix prompt in that same ChatGPT conversation, then import the corrected JSON.
+    - generic [ref=e467]:
+      - heading "Prompt preview" [level=2] [ref=e468]
+      - generic [ref=e469]: Copy, don't upload
+    - generic [ref=e470]:
+      - button "Coverage plan" [ref=e471] [cursor=pointer]
+      - button "Generate exam" [ref=e472] [cursor=pointer]
+      - button "Fix formatting" [ref=e473] [cursor=pointer]
+    - generic [ref=e474]: "SOURCE NOT READY: Import and approve at least one teaching document first."
+    - button "Already have questions? Go to Import" [ref=e476] [cursor=pointer]
+    - generic [ref=e479]: Local extracts aren't stored as draft files. Pasting the prompt into ChatGPT shares its selected content.
+  - generic "QuestionForge information" [ref=e484]:
+    - generic [ref=e485]: QUESTIONFORGE 0.8.4
+    - button "Support" [ref=e486] [cursor=pointer]
+    - button "About" [ref=e490] [cursor=pointer]

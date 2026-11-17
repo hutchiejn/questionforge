@@ -4,11 +4,11 @@
   "files": [
     {
       "path": "404.html",
-      "sha256": "c40a4cf2c7840df99df6b8845ca40d9dcb6cfcf2e148c108d989a77b53e49369"
+      "sha256": "e5a9d88a9530941c97531209e7a34d6c5c4b8d9e62fce4d7f5708a680fca91a6"
     },
     {
       "path": "assets/accessibility-contrast.css",
-      "sha256": "56190c3a07bf9ed7dc9a0b7c998b8eef1c18f3b39d2a19c51644853a3c916c32"
+      "sha256": "dfc7287e6a8be3617279b3663ac822d467b67602b2ea6df8c858f012a4121389"
     },
     {
       "path": "assets/brand-mark-dark.svg",
@@ -37,10 +37,6 @@
     {
       "path": "assets/favicon.png",
       "sha256": "f3d8ce1a1923f39895ba3c6fc43e2d649cf248d9404066b22386f3edbaa1028d"
-    },
-    {
-      "path": "assets/qforge.css",
-      "sha256": "1e728b1875b54fc74eddcee2aeb0dfee35b57e6ab9d602ddd5e0a54e3e24b568"
     },
     {
       "path": "assets/gcash-receive-card.png",
@@ -96,11 +92,11 @@
     },
     {
       "path": "assets/prompt-builder-dark.png",
-      "sha256": "e76cb6e34d3c76ec70214239ebe3bc0a8e8c21980068acd3f7f1e863e35b3d06"
+      "sha256": "0038e4fa995f69a4deba35e76315e160471450c2925dc2919112dadf8e397103"
     },
     {
       "path": "assets/prompt-builder.png",
-      "sha256": "b91e9e686022c2666507a5a0a5e05f9f5c7fd98911464e22a4fdcc8e4b0a457d"
+      "sha256": "b0f3b8c79fd20d64129a2781294a4843711ea42399bb61b32ef56a8d1352dbeb"
     },
     {
       "path": "assets/qf-mark-dark.svg",
@@ -109,6 +105,10 @@
     {
       "path": "assets/qf-mark-light.svg",
       "sha256": "cf158b74ff9f7b36937c36ed24a3072fa8c7559009842a944288bd06d914b630"
+    },
+    {
+      "path": "assets/qforge.css",
+      "sha256": "54ee8e12a967fa2dd34a17464fdbc90720b510e5be21b1380c2978390750d1c9"
     },
     {
       "path": "assets/question-review.png",
@@ -120,7 +120,7 @@
     },
     {
       "path": "assets/site.css",
-      "sha256": "eba158795828ed00369e809189cc81378ce930a0af5ab7460f20c495d3df57c2"
+      "sha256": "69d4ba51af0bab033e43694efcbebbbc1e8c3c938fd262c05885ddd46b173d24"
     },
     {
       "path": "assets/site.js",
@@ -140,7 +140,7 @@
     },
     {
       "path": "contact.html",
-      "sha256": "b9485ad85748346b9348fbd899bc60f5d5fa91eb12f58a125861524496c97409"
+      "sha256": "4c2d8892e3ccd2d88028566e8dd14c27e39bbdccc8e5c9129473c8379c865514"
     },
     {
       "path": "downloads/QuestionForge-v0.8.4-production.zip",
@@ -148,19 +148,23 @@
     },
     {
       "path": "faq.html",
-      "sha256": "29d2dc44903f08d3b4442fb49b24f5e2b616dfb1b6b1762c26b8596aa7f891c7"
+      "sha256": "88498a945f6c0f49b3ce1afd3127cb86a697e177ea305e7c13f4d46ab458a8ef"
     },
     {
       "path": "guide.html",
-      "sha256": "51dc9b1d1904b2197ee47623e5671cf4660eb6cf31f0438e0a26e43e71f2384d"
+      "sha256": "9d0cb2499b25fd4866c935a56db1a3d2441d4a0cb4cf22daa62534feeaf26611"
     },
     {
       "path": "index.html",
-      "sha256": "3d1a59325225aa2f56167f042fe676d4c3c7b1703c9963cb8c1b8c638f8e50a4"
+      "sha256": "d825cc4f6ea927ba0840b661cee8f568227cc56f3e188930fd590e1d333b414c"
     },
     {
       "path": "privacy.html",
-      "sha256": "b19f792a8a903c4f38a8bfefa5577e3bc82629c55fdac5f637aa8533199654a8"
+      "sha256": "270f8983a1ce48c8a158c88a3a02c9903d76a54e45916771cfa3c3abb4084491"
+    },
+    {
+      "path": "release.json",
+      "sha256": "5d8738f991032dd2ef6eb3a2a0eb5048a22511a6876036093316be4eecb4ed07"
     }
   ]
 }

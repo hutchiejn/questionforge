@@ -1,0 +1,11 @@
+{
+  "root": "C:\\Users\\hutch\\AppData\\Local\\Temp\\questionforge-release-preview-f2u2bcd0",
+  "metadata": {
+    "repository": "xf00889/questionforge-ext",
+    "version": "0.8.5",
+    "download_url": "https://github.com/xf00889/questionforge-ext/releases/download/v0.8.5/QuestionForge-v0.8.5-production.zip",
+    "size_bytes": 669,
+    "sha256": "bb15927c87e17063e4ec756a41eac90057b78010f3072adc246da286b92f11d2",
+    "prerelease": true
+  }
+}

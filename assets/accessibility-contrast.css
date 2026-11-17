@@ -182,7 +182,8 @@ body.qforge-site .faq-quick span {color:#56695a}
 :root[data-theme=dark] body.qforge-site .faq-quick span {color:#d0e1d2}
 :root[data-theme=dark] body.qforge-site .faq-independent a {color:#a6f3c9}
 :root[data-theme=dark] body.qforge-site .faq-independent a:hover {color:#dcffe8}
-:root[data-theme=dark] body.qforge-site .faq-question-number,
+:root[data-theme=dark] body.qforge-site .faq-item-number,
+:root[data-theme=dark] body.qforge-site .faq-arch-card>.section-number,
 :root[data-theme=dark] body.qforge-site .faq-arch-feature .icon {color:#a6f3c9}
 :root[data-theme=dark] body.qforge-site .home-chapter-index,
 :root[data-theme=dark] body.qforge-site .home-step-list li>span:first-child {color:#a6f3c9}

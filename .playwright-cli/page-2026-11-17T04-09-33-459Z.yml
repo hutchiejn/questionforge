@@ -1,0 +1,59 @@
+- main [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "QuestionForge" [ref=e8]
+        - generic [ref=e9]: BETA
+      - generic [ref=e10]: QUESTION PAPER STUDIO
+    - generic [ref=e11]:
+      - button "Privacy and security settings" [ref=e12] [cursor=pointer]
+      - button "Switch to light mode" [ref=e16] [cursor=pointer]
+      - button "Load example questions" [ref=e20] [cursor=pointer]
+  - navigation "QuestionForge workflow" [ref=e24]:
+    - button "00. Prompt" [ref=e25] [cursor=pointer]:
+      - generic [ref=e26]: "00."
+      - generic [ref=e27]: Prompt
+    - button "01. Import" [ref=e28] [cursor=pointer]:
+      - generic [ref=e29]: "01."
+      - generic [ref=e30]: Import
+    - button "02. Review" [ref=e31] [cursor=pointer]:
+      - generic [ref=e32]: "02."
+      - generic [ref=e33]: Review
+    - button "03. Export" [ref=e34] [cursor=pointer]:
+      - generic [ref=e35]: "03."
+      - generic [ref=e36]: Export
+  - generic [ref=e38]:
+    - generic [ref=e39]:
+      - generic [ref=e40]: 01 — IMPORT
+      - heading "Import questions" [level=1] [ref=e41]
+      - paragraph [ref=e42]: Paste questions from ChatGPT or upload a file. Review everything before creating your paper.
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e46]: SOURCE MATERIAL
+          - heading "Question text" [level=2] [ref=e47]
+        - generic [ref=e48]: JSON preferred · TXT supported
+      - generic [ref=e49]:
+        - button "Paste clipboard" [ref=e50] [cursor=pointer]
+        - button "Upload file" [ref=e54] [cursor=pointer]
+      - textbox "Question text" [ref=e58]:
+        - /placeholder: "1. What is a volcano?\nA. A mountain made of ice\nB. An opening in Earth's crust\nC. A lake\nD. A valley\nAnswer: B\n\n2. Define magma.\nAnswer: Molten rock underground."
+      - generic [ref=e59]:
+        - generic [ref=e60]: 0 characters
+        - button "Clear" [ref=e61] [cursor=pointer]
+      - button "Parse questions" [ref=e64] [cursor=pointer]
+      - button "Explore with sample questions" [ref=e69] [cursor=pointer]
+      - generic [ref=e72]: Structured JSON helps prevent extra or misclassified questions
+    - generic [ref=e75]:
+      - generic [ref=e79]:
+        - strong [ref=e80]: Creating an exam from a lesson plan?
+        - paragraph [ref=e81]: Build a prompt from your BOW, lesson plan, or TOS. No AI needed inside this extension.
+      - button "Build prompt" [ref=e82] [cursor=pointer]
+    - generic [ref=e88]:
+      - text: You can also highlight text on a webpage, then right-click →
+      - strong [ref=e89]: Add to QuestionForge.
+    - generic [ref=e90]: Private by design. Everything stays on this device.
+  - generic "QuestionForge information" [ref=e95]:
+    - generic [ref=e96]: QUESTIONFORGE 0.8.4
+    - button "Support" [ref=e97] [cursor=pointer]
+    - button "About" [ref=e101] [cursor=pointer]

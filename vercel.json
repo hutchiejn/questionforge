@@ -54,5 +54,6 @@
         }
       ]
     }
-  ]
+  ],
+  "buildCommand": "python3 tools/sync_release.py --latest && python3 tools/security_check.py"
 }

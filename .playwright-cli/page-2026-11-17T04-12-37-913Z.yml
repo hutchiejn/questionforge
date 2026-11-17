@@ -1,0 +1,347 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "QuestionForge home" [ref=e5] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=e6]: QuestionForge
+      - navigation "Main navigation" [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: index.html
+        - link "How it works" [ref=e9] [cursor=pointer]:
+          - /url: guide.html
+        - link "FAQ" [ref=e10] [cursor=pointer]:
+          - /url: faq.html
+        - link "Privacy" [ref=e11] [cursor=pointer]:
+          - /url: privacy.html
+        - link "Contact" [ref=e12] [cursor=pointer]:
+          - /url: contact.html
+      - generic [ref=e13]: v0.8.4 Beta
+      - button "Switch to dark mode" [ref=e14] [cursor=pointer]:
+        - generic [ref=e17]: Change color theme
+      - link "Get QuestionForge" [ref=e18] [cursor=pointer]:
+        - /url: guide.html#install
+        - text: Get QuestionForge
+        - generic [aria-hidden] [ref=e19]: ↗
+  - main [ref=e20]:
+    - region "Questions in. Paper out." [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - generic [aria-hidden] [ref=e25]: ↳
+            - text: QUESTIONFORGE
+            - generic [ref=e26]: /
+            - text: QUESTION PAPER STUDIO
+          - heading "Questions in. Paper out." [level=1] [ref=e27]: Questions in.Paper out.
+          - paragraph [ref=e28]: Turn questions from your AI chatbot into a paper you can actually hand out. Check the answers, fix the formatting, and export to Word or PDF.
+          - generic [ref=e29]:
+            - link "Get QuestionForge" [ref=e30] [cursor=pointer]:
+              - /url: guide.html#install
+              - text: Get QuestionForge
+              - generic [aria-hidden] [ref=e31]: ↗
+            - link "See how it works" [ref=e32] [cursor=pointer]:
+              - /url: "#how-it-works"
+              - text: See how it works
+              - generic [aria-hidden] [ref=e33]: ↓
+          - generic [ref=e34]:
+            - text: Free Chrome extension
+            - generic [ref=e36]: /
+            - text: Local-first
+            - generic [ref=e37]: /
+            - text: Desktop Chrome
+        - generic "Example of a QuestionForge question reviewer and finished assessment" [ref=e38]:
+          - generic [ref=e39]:
+            - generic [ref=e40]: UI EXAMPLE / PRINT EXAMPLE ↘
+            - generic [ref=e41]: 01 — REVIEW UI / 02 — SAMPLE PAPER
+          - img "Mockup of a print-ready science assessment with two-column questions" [ref=e42]:
+            - generic [ref=e43]: SAMPLE ACADEMY — SCIENCE DEPARTMENT
+            - generic [ref=e44]: Earth Science Practice Assessment
+            - generic [ref=e45]: Quarter 1 · Review Module
+            - generic [ref=e47]:
+              - text: "Name: ___________________"
+              - generic [ref=e48]: "Score: ______"
+            - generic [ref=e49]: "Instructions: Read each question carefully. Write your answers clearly."
+            - generic [ref=e50]:
+              - generic [ref=e51]:
+                - text: MULTIPLE CHOICE
+                - paragraph [ref=e52]: 1. What is a volcano?
+                - generic [ref=e53]: A. A large body of water
+                - generic [ref=e54]: B. An opening in Earth's crust
+                - generic [ref=e55]: C. A deep ocean trench
+                - paragraph [ref=e56]: 2. What is molten rock inside Earth?
+                - generic [ref=e57]: A. Cinder
+                - generic [ref=e58]: B. Magma
+                - generic [ref=e59]: C. Ash
+              - generic [ref=e60]:
+                - text: IDENTIFICATION
+                - paragraph [ref=e61]: 3. What is the primary source of heat that drives activity inside Earth?
+                - generic [ref=e62]: A. Sunlight
+                - generic [ref=e63]: B. Earth's internal heat
+                - generic [ref=e64]: C. Ocean currents
+                - paragraph [ref=e65]: 4. Which volcano is active in the Philippines?
+                - generic [ref=e66]: A. Mount Fuji
+                - generic [ref=e67]: B. Mayon Volcano
+            - generic [ref=e68]:
+              - text: QUESTIONFORGE DETERMINISTIC EXPORT
+              - generic [ref=e69]: PAGE 1 OF 2
+          - img "Example QuestionForge review panel with five questions staged" [ref=e70]:
+            - generic [ref=e71]:
+              - generic [ref=e72]: ● 02 — REVIEW
+              - generic [ref=e73]: v0.8.4 sidepanel
+            - generic [ref=e74]: Review questions
+            - paragraph [ref=e75]: Check questions and answers, make changes, or add your own.
+            - generic [ref=e76]:
+              - generic [ref=e77]:
+                - generic [ref=e78]: "5"
+                - text: QUESTIONS
+              - generic [ref=e79]:
+                - generic [ref=e80]: "5"
+                - text: TYPES
+              - generic [ref=e81]:
+                - generic [ref=e82]: "0"
+                - text: TO REVIEW
+            - generic [ref=e83]:
+              - text: ⌕ Find a question...
+              - generic [ref=e84]: All types
+            - generic [ref=e85]:
+              - text: MCQ · 1 point
+              - generic [ref=e86]: 01 / 5
+              - paragraph [ref=e87]: Which HTML element represents the main heading of a page?
+              - generic [ref=e88]: A. <h6>
+              - generic [ref=e89]:
+                - text: B. <h1>
+                - generic [ref=e90]: ◎
+              - generic [ref=e91]: C. <header>
+              - generic [ref=e92]: D. <title>
+    - region "QuestionForge at a glance" [ref=e93]:
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - generic [ref=e96]: 01 /
+          - generic [ref=e97]: Work from your teaching material
+        - generic [ref=e98]:
+          - generic [ref=e99]: 02 /
+          - generic [ref=e100]: Edit every question
+        - generic [ref=e101]:
+          - generic [ref=e102]: 03 /
+          - generic [ref=e103]: Print it your way
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - generic [ref=e107]:
+          - text: "01"
+          - generic [ref=e108]: /
+          - text: PREPARE
+        - heading [level=2] [ref=e109]:
+          - text: Start with
+          - emphasis [ref=e110]: the lesson.
+        - paragraph [ref=e111]: The exam should reflect what you taught. Bring a lesson plan, BOW, or TOS. QuestionForge helps you review the source and build a structured prompt for your chosen AI chatbot.
+        - generic [ref=e112]:
+          - generic [ref=e113]:
+            - generic [ref=e114]: "01"
+            - text: Import teaching material
+          - generic [ref=e115]:
+            - generic [ref=e116]: "02"
+            - text: Verify what was extracted
+          - generic [ref=e117]:
+            - generic [ref=e118]: "03"
+            - text: Approve the coverage plan
+        - link "Learn the planning workflow" [ref=e119] [cursor=pointer]:
+          - /url: guide.html#workflow
+          - text: Learn the planning workflow
+          - generic [aria-hidden] [ref=e120]: ↗
+      - generic [ref=e122]:
+        - generic [ref=e123]:
+          - generic [ref=e124]: QUESTIONFORGE / PROMPT
+          - generic [ref=e125]: WORKFLOW PREVIEW
+        - generic [ref=e126]:
+          - generic [ref=e127]:
+            - generic [ref=e128]: ● QuestionForge
+            - generic [ref=e129]: 01. Prompt → 02. Import
+          - generic [ref=e130]:
+            - generic [ref=e131]: 01 / PREPARE
+            - strong [ref=e132]: Build your exam prompt
+            - generic [ref=e133]: Tell your AI chatbot what to assess. Then bring the finished questions back here to format.
+          - generic [ref=e134]:
+            - generic [ref=e135]: ▣
+            - generic [ref=e136]: Import teaching material
+            - generic [ref=e137]: DOCX, XLSX, PDF, CSV or TXT — processed locally
+            - generic [ref=e138]:
+              - generic [ref=e139]: Choose file
+              - generic [ref=e140]: Paste text
+          - generic [ref=e141]:
+            - generic [ref=e142]: Bring the source. Keep the final say.
+            - generic [ref=e143]: 100% Client-side
+    - region "The details still matter." [ref=e144]:
+      - generic [ref=e145]:
+        - generic [ref=e146]:
+          - generic [ref=e147]:
+            - text: "02"
+            - generic [ref=e148]: /
+            - text: REVIEW → EXPORT
+          - heading "The details still matter." [level=2] [ref=e149]: The detailsstill matter.
+          - paragraph [ref=e150]: AI-generated questions need a human review. Check counts, types, wording, and answers—then see how they become a formatted document.
+          - group "Preview a QuestionForge screen" [ref=e151]:
+            - button "01 Review" [pressed] [ref=e152] [cursor=pointer]
+            - button "02 Final paper" [ref=e153] [cursor=pointer]
+          - generic [ref=e154]:
+            - generic [aria-hidden] [ref=e155]: ↳
+            - generic [ref=e156]: Your question bank, before anything goes to print.
+        - generic [ref=e157]:
+          - generic [ref=e158]:
+            - generic [ref=e159]: QUESTION REVIEWER
+            - generic [ref=e160]: 02 / 03
+          - img "QuestionForge's editable question bank" [ref=e163]
+          - generic [ref=e164]:
+            - generic [ref=e165]: ACTUAL UI / SAMPLE OUTPUT
+            - generic [aria-hidden] [ref=e166]: ↗
+    - generic [ref=e168]:
+      - generic [ref=e169]:
+        - generic [ref=e170]:
+          - text: "03"
+          - generic [ref=e171]: /
+          - text: FORMAT
+        - heading [level=2] [ref=e172]:
+          - text: Make the paper
+          - emphasis [ref=e173]: look like yours.
+        - paragraph [ref=e174]: School heading, logo, page margins, custom text, answer keys, and one- or two-column layouts. A clean document doesn't have to mean another hour in Word.
+        - generic [ref=e175]:
+          - generic [ref=e176]:
+            - generic [ref=e177]: OUTPUT
+            - strong [ref=e178]: Word · PDF
+          - generic [ref=e179]:
+            - generic [ref=e180]: LAYOUT
+            - strong [ref=e181]: One or two columns
+          - generic [ref=e182]:
+            - generic [ref=e183]: BRANDING
+            - strong [ref=e184]: School logo & header
+        - link "See export options" [ref=e185] [cursor=pointer]:
+          - /url: guide.html#document-export
+          - text: See export options
+          - generic [aria-hidden] [ref=e186]: ↗
+      - generic "Example formatted assessment paper" [ref=e187]:
+        - generic [ref=e188]:
+          - generic [ref=e189]:
+            - generic [ref=e190]: READY FOR THE PRINTER
+            - generic [ref=e191]: ↓
+          - generic [ref=e192]:
+            - generic [ref=e193]:
+              - generic [ref=e194]: SA
+              - generic [ref=e195]:
+                - strong [ref=e196]: ST. ANDREW'S ACADEMY
+                - generic [ref=e197]: Eastern Examination in General Biology
+              - generic [ref=e198]: SET A
+            - generic [ref=e199]:
+              - generic [ref=e200]:
+                - text: PART I. CELLULAR RESPIRATION
+                - paragraph [ref=e201]: 1. Where does glycolysis occur?
+                - generic [ref=e202]: A. MitochondriaB. CytoplasmC. Cristae
+              - generic [ref=e203]:
+                - text: PART II. MITOSIS
+                - paragraph [ref=e204]: 2. Identify the stage where chromosomes align at the equatorial plate.
+                - text: "Answer: __________________"
+    - region "Four steps. No magic." [ref=e205]:
+      - generic [ref=e206]:
+        - generic [ref=e207]:
+          - generic [ref=e208]:
+            - text: "04"
+            - generic [ref=e209]: /
+            - text: THE WORKFLOW
+          - heading "Four steps. No magic." [level=2] [ref=e210]: Four steps.No magic.
+          - paragraph [ref=e211]: QuestionForge doesn't generate questions by itself. It helps you prepare, review, and publish them.
+        - list [ref=e212]:
+          - listitem [ref=e213]:
+            - generic [ref=e214]: "01"
+            - generic [ref=e215]:
+              - heading "Bring the lesson" [level=3] [ref=e216]
+              - paragraph [ref=e217]: Import teaching materials or paste your own source text, then verify it.
+            - generic [aria-hidden] [ref=e218]: ↗
+          - listitem [ref=e219]:
+            - generic [ref=e220]: "02"
+            - generic [ref=e221]:
+              - heading "Plan with your AI chatbot" [level=3] [ref=e222]
+              - paragraph [ref=e223]: Copy the coverage and generation prompts into the same conversation.
+            - generic [aria-hidden] [ref=e224]: ↗
+          - listitem [ref=e225]:
+            - generic [ref=e226]: "03"
+            - generic [ref=e227]:
+              - heading "Review the questions" [level=3] [ref=e228]
+              - paragraph [ref=e229]: Import structured JSON. Fix counts, answers, and question types.
+            - generic [aria-hidden] [ref=e230]: ↗
+          - listitem [ref=e231]:
+            - generic [ref=e232]: "04"
+            - generic [ref=e233]:
+              - heading "Export the paper" [level=3] [ref=e234]
+              - paragraph [ref=e235]: Choose formatting, download Word, or print to PDF.
+            - generic [aria-hidden] [ref=e236]: ↗
+    - region "Your files aren't our business." [ref=e237]:
+      - generic [ref=e238]:
+        - generic [ref=e239]:
+          - generic [ref=e240]: BUILT WITH BOUNDARIES
+          - heading "Your files aren't our business." [level=2] [ref=e241]: Your files aren'tour business.
+        - generic [ref=e242]:
+          - paragraph [ref=e243]: Teaching files are processed locally. QuestionForge doesn't automatically upload them to an AI service. You decide what to share with your chosen AI chatbot.
+          - paragraph [ref=e244]: Locally saved drafts are optional and aren't encrypted by QuestionForge.
+          - link "How privacy works" [ref=e245] [cursor=pointer]:
+            - /url: privacy.html
+            - text: How privacy works
+            - generic [aria-hidden] [ref=e246]: ↗
+    - generic [ref=e248]:
+      - generic [ref=e249]: QUESTIONFORGE / FREE TO USE
+      - heading "Less time fixing pages. More time checking questions." [level=2] [ref=e250]: Less time fixing pages.More time checking questions.
+      - generic [ref=e251]:
+        - link "Get QuestionForge" [ref=e252] [cursor=pointer]:
+          - /url: guide.html#install
+          - text: Get QuestionForge
+          - generic [aria-hidden] [ref=e253]: ↗
+        - link "Support with GCash" [ref=e254] [cursor=pointer]:
+          - /url: contact.html#support-the-project
+          - text: Support with GCash
+          - generic [aria-hidden] [ref=e255]: ↗
+      - paragraph [ref=e256]: Developer preview for desktop Chrome. No QuestionForge account required.
+  - contentinfo [ref=e257]:
+    - generic [ref=e258]:
+      - generic [ref=e259]:
+        - generic [ref=e260]:
+          - link "QuestionForge" [ref=e261] [cursor=pointer]:
+            - /url: index.html
+          - paragraph [ref=e263]: A free, local-first question paper studio for teachers, learners, and the people who support them.
+          - text: Independent project · Not affiliated with AI providers or browser vendors
+        - generic [ref=e264]:
+          - heading "Product" [level=4] [ref=e265]
+          - generic [ref=e266]:
+            - link "Getting started" [ref=e267] [cursor=pointer]:
+              - /url: guide.html
+            - link "Exam workflow" [ref=e268] [cursor=pointer]:
+              - /url: guide.html#workflow
+            - link "Export guide" [ref=e269] [cursor=pointer]:
+              - /url: guide.html#document-export
+            - link "FAQs" [ref=e270] [cursor=pointer]:
+              - /url: faq.html
+        - generic [ref=e271]:
+          - heading "Information" [level=4] [ref=e272]
+          - generic [ref=e273]:
+            - link "Privacy policy" [ref=e274] [cursor=pointer]:
+              - /url: privacy.html
+            - link "Contact & support" [ref=e275] [cursor=pointer]:
+              - /url: contact.html
+            - link "Known limitations" [ref=e276] [cursor=pointer]:
+              - /url: guide.html#limitations
+        - generic [ref=e277]:
+          - heading "Developer" [level=4] [ref=e278]
+          - generic [ref=e279]:
+            - link "GitHub portfolio ↗" [ref=e280] [cursor=pointer]:
+              - /url: https://github.com/xf00889
+            - link "Email support ↗" [ref=e281] [cursor=pointer]:
+              - /url: mailto:hutchiejn@gmail.com
+        - generic [ref=e282]:
+          - heading "Support" [level=4] [ref=e283]
+          - generic [ref=e284]:
+            - link "Donate via GCash ↗" [ref=e285] [cursor=pointer]:
+              - /url: contact.html#support-the-project
+            - generic [ref=e286]: Completely optional. All features stay free.
+      - generic [ref=e287]:
+        - generic [ref=e288]: © 2026 QuestionForge. Built for simpler assessment preparation.
+        - generic [ref=e289]:
+          - text: Website and extension v0.8.4 information ·
+          - link "Privacy" [ref=e290] [cursor=pointer]:
+            - /url: privacy.html

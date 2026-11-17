@@ -10,6 +10,11 @@
   --qf-cream:#f0eee6;--qf-surface:#fafbf8;
 }
 html {scroll-padding-top:84px}
+body.qforge-site :is(.home-quiet-link,.faq-quick a,.toc a,.prepare-upload div span){border-radius:6px}
+body.qforge-site :is(.home-line-list>div,.home-spec-list>div,.home-step-list li,.prepare-screen,.prepare-intro,.prepare-upload,.editor-stats,.editor-search,.editor-card,.editor-card div,.faq-independent,.guide-system-note,.guide-article>section>ol>li,.gcash-safety-notice,.home-demo-image-wrap){border-radius:8px}
+body.qforge-site .release-badge{border-radius:4px}
+body.qforge-site .export-sheet{border-radius:4px}
+
 body.qforge-site{background:var(--qf-surface);color:var(--ink);font-family:var(--font);line-height:1.6;font-size:14px}
 body.qforge-site h1,body.qforge-site h2,body.qforge-site h3,body.qforge-site h4{font-family:var(--heading-font);letter-spacing:-.034em;line-height:1.15}
 body.qforge-site a,body.qforge-site button{transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .18s ease}
@@ -19,21 +24,21 @@ body.qforge-site .site-header{background:#fafbf8f5;border-color:#e2e8e3;backdrop
 body.qforge-site .header-inner{min-height:65px;gap:16px}
 body.qforge-site .brand{font-family:var(--heading-font);font-size:16px;font-weight:700;letter-spacing:-.035em;gap:9px;color:var(--ink)}
 body.qforge-site .brand .forge{color:inherit}
-body.qforge-site .brand img,body.qforge-site .footer .brand img{width:27px;height:27px;border-radius:2px}
+body.qforge-site .brand img,body.qforge-site .footer .brand img{width:27px;height:27px;border-radius:6px}
 body.qforge-site .nav{gap:27px;margin-left:auto;margin-right:auto}
 body.qforge-site .nav a:not(.nav-cta){font-family:var(--mono);font-size:12px;font-weight:500;color:#59605a;letter-spacing:0}
 body.qforge-site .nav a[aria-current=page]{color:var(--ink);border-bottom:1px solid var(--green);padding:5px 0}
 body.qforge-site .nav a:hover{color:var(--green-dark)}
 body.qforge-site .nav-cta-mobile{display:none}
 body.qforge-site .release-badge{display:inline-block;background:#e6eee7;border:1px solid #cbd5cd;color:#006c47;padding:2px 8px;font:600 10px/1.5 var(--mono);white-space:nowrap}
-body.qforge-site .header-download{font:500 11px/1.4 var(--mono);display:inline-flex;align-items:center;gap:6px;background:#0b120e;color:#fff;text-decoration:none;padding:11px 15px;white-space:nowrap;border:1px solid #0b120e;border-radius:2px}
+body.qforge-site .header-download{font:500 11px/1.4 var(--mono);display:inline-flex;align-items:center;gap:6px;background:#0b120e;color:#fff;text-decoration:none;padding:11px 15px;white-space:nowrap;border:1px solid #0b120e;border-radius:6px}
 body.qforge-site .header-download:hover{background:#006c47;border-color:#006c47}
-body.qforge-site .theme-switch{width:37px;height:37px;flex:0 0 37px;border:1px solid #cbd5cd;border-radius:2px;background:transparent;color:#59605a;order:0}
+body.qforge-site .theme-switch{width:37px;height:37px;flex:0 0 37px;border:1px solid #cbd5cd;border-radius:6px;background:transparent;color:#59605a;order:0}
 body.qforge-site .theme-switch svg{width:16px;height:16px}
-body.qforge-site .button,body.qforge-site .nav-cta,body.qforge-site .support-button{border-radius:2px}
+body.qforge-site .button,body.qforge-site .nav-cta,body.qforge-site .support-button{border-radius:6px}
 body.qforge-site .button.dark{background:#0b120e;color:#fff}
 body.qforge-site .eyebrow,body.qforge-site .section-number{font:700 11px/1.5 var(--mono);letter-spacing:.13em;color:#006c47;text-transform:uppercase}
-body.qforge-site .micro-badge{font:700 11px/1.5 var(--mono);letter-spacing:.09em;background:#e6eee7;border:1px solid #cbd5cd;color:#006c47;display:inline-flex;align-items:center;padding:5px 10px;border-radius:2px}
+body.qforge-site .micro-badge{font:700 11px/1.5 var(--mono);letter-spacing:.09em;background:#e6eee7;border:1px solid #cbd5cd;color:#006c47;display:inline-flex;align-items:center;padding:5px 10px;border-radius:6px}
 /* HEADER NAV PRECEDENCE */
 body.qforge-site .header-download{order:4}body.qforge-site .release-badge{order:2}body.qforge-site .theme-switch{order:3}
 /* HOME — EDITORIAL HERO */
@@ -49,7 +54,7 @@ body.qforge-site .home-page .home-hero h1{font:700 clamp(44px,4.5vw,56px)/1.07 v
 body.qforge-site .home-page .home-hero h1 span{font-weight:500;color:#00885a}
 body.qforge-site .home-deck{font-size:18px;line-height:1.62;letter-spacing:-.01em;color:#59605a;max-width:510px;margin:0}
 body.qforge-site .home-hero-actions{gap:12px;margin:32px 0 0}
-body.qforge-site .home-button{border-radius:2px;min-height:51px;padding:12px 24px;font:600 15px/1.5 var(--font);gap:14px}
+body.qforge-site .home-button{border-radius:6px;min-height:51px;padding:12px 24px;font:600 15px/1.5 var(--font);gap:14px}
 body.qforge-site .home-button--dark{background:#0b120e;color:#fff}
 body.qforge-site .home-button--dark:hover{background:#006c47;color:#fff}
 body.qforge-site .home-quiet-link{display:inline-flex;min-height:51px;border:1px solid #cbd5cd;padding:11px 21px;text-decoration:none;font:500 15px/1.5 var(--font);gap:14px}
@@ -102,10 +107,10 @@ body.qforge-site .home-line-list{margin:28px 0 20px;border:0;display:grid;gap:8p
 body.qforge-site .home-line-list>div{border:1px solid #e2e8e3;background:#fff;padding:12px 14px;font:500 13px/1.55 var(--font)}
 body.qforge-site .home-line-list span{font:600 10px/1.4 var(--mono);color:#006c47}
 body.qforge-site .home-inline-cta{border:0;padding:12px 0;font:600 13px/1.5 var(--font)}
-body.qforge-site .prepare-window{background:#f0eee6;border:1px solid #d8dbd2;border-radius:6px;padding:23px 25px;width:100%;max-width:540px;min-height:390px}
+body.qforge-site .prepare-window{background:#f0eee6;border:1px solid #d8dbd2;border-radius:8px;padding:23px 25px;width:100%;max-width:540px;min-height:390px}
 body.qforge-site .prepare-window .home-media-topline{font:600 10px/1.5 var(--mono);letter-spacing:.08em;color:#59605a;margin:0 0 20px}
 body.qforge-site .prepare-window .home-media-topline span:last-child{color:#006c47}
-body.qforge-site .prepare-screen{background:#fff;border:1px solid #e2e8e3;max-width:460px;margin:auto;padding:14px}
+body.qforge-site .prepare-screen{background:#fff;color:#0b120e;border:1px solid #e2e8e3;max-width:460px;margin:auto;padding:14px}
 body.qforge-site .prepare-topline{display:flex;justify-content:space-between;border-bottom:1px solid #e2e8e3;padding:2px 2px 14px;font:600 10px/1.5 var(--mono);gap:5px}
 body.qforge-site .prepare-topline span:first-child{color:#006c47}
 body.qforge-site .prepare-intro{display:flex;flex-direction:column;gap:6px;background:#e6eee7;padding:13px 15px;margin-top:12px}
@@ -127,19 +132,19 @@ body.qforge-site .home-demo .home-chapter-index{color:#8cf8c0}
 body.qforge-site .home-page .home-demo h2{color:#fff}
 body.qforge-site .home-demo-intro>p{color:#b9c7bc}
 body.qforge-site .home-demo-tabs{border:0;gap:8px;margin-top:24px}
-body.qforge-site .home-demo-tab{border:1px solid #334338;background:#242e27;color:#d0d9d1;border-radius:2px;padding:10px 16px;font:500 11px/1.4 var(--mono)}
+body.qforge-site .home-demo-tab{border:1px solid #334338;background:#242e27;color:#d0d9d1;border-radius:6px;padding:10px 16px;font:500 11px/1.4 var(--mono)}
 body.qforge-site .home-demo-tab.active{background:#00885a;color:#fff;border-color:#00885a}
 body.qforge-site .home-demo-tab.active span{color:#fff}
 body.qforge-site .home-demo-note{font:500 10px/1.5 var(--mono);color:#b4c5b8;margin-top:17px}
 body.qforge-site .home-demo-marker{color:#8cf8c0;font-size:12px}
-body.qforge-site .home-demo-display{background:#1b241e;border:1px solid #3b4a3d;border-radius:6px;padding:23px;max-height:none}
+body.qforge-site .home-demo-display{background:#1b241e;border:1px solid #3b4a3d;border-radius:8px;padding:23px;max-height:none}
 body.qforge-site .home-demo-top{border:0;padding:0 0 14px;font:600 10px/1.5 var(--mono)}
 body.qforge-site .home-demo-image-wrap{height:320px;background:#101813;border:1px solid #3a4a40;padding:18px;align-items:flex-start}
-body.qforge-site .home-demo-image-wrap img{border-radius:2px;max-width:220px;max-height:280px}
+body.qforge-site .home-demo-image-wrap img{border-radius:6px;max-width:220px;max-height:280px}
 body.qforge-site .home-demo-bottom{padding:15px 0 0;font:600 10px/1.5 var(--mono)}
 body.qforge-site .home-chapter--export{padding:100px 0}
 body.qforge-site .home-export-display{padding:0;border:0}
-body.qforge-site .export-preview-frame{background:#f0eee6;border:1px solid #dadcd5;border-radius:6px;padding:23px;max-width:570px;min-height:360px}
+body.qforge-site .export-preview-frame{background:#f0eee6;border:1px solid #dadcd5;border-radius:8px;padding:23px;max-width:570px;min-height:360px}
 body.qforge-site .export-frame-top{display:flex;justify-content:space-between;color:#59605a;font:600 10px/1.5 var(--mono);letter-spacing:.1em;margin-bottom:20px}
 body.qforge-site .export-sheet{background:white;color:#0b120e;border:1px solid #dfe4de;box-shadow:0 12px 24px #1b25171a;padding:24px 26px;min-height:255px}
 body.qforge-site .export-school{display:flex;align-items:center;gap:10px;border-bottom:1px solid #bfc7be;padding-bottom:14px}
@@ -167,7 +172,7 @@ body.qforge-site .home-step-list li>span:last-child{position:absolute;right:20px
 body.qforge-site .home-step-list h3{font:700 16px/1.4 var(--heading-font);margin:0 0 9px}
 body.qforge-site .home-step-list p{font:12px/1.65 var(--font);color:#59605a}
 body.qforge-site .home-privacy{padding:74px 0;background:#f0eee6}
-body.qforge-site .home-privacy-layout{background:#fff;border:1px solid #d5ded7;border-radius:6px;padding:48px;grid-template-columns:1fr auto;gap:30px}
+body.qforge-site .home-privacy-layout{background:#fff;border:1px solid #d5ded7;border-radius:8px;padding:48px;grid-template-columns:1fr auto;gap:30px}
 body.qforge-site .home-page .home-privacy h2{font-size:45px;margin:14px 0}
 body.qforge-site .home-privacy-layout>div:last-child{max-width:420px}
 body.qforge-site .home-privacy-layout>div:last-child p{font-size:14px;line-height:1.75}
@@ -197,13 +202,13 @@ body.qforge-site .faq-quick a{border:1px solid #e2e8e3;padding:5px 10px;backgrou
 body.qforge-site .faq-quick a:hover{border-color:#00885a}
 body.qforge-site .faq-filter-strip{border-bottom:1px solid #e2e8e3;background:#fafbf8}
 body.qforge-site .faq-filter-items{display:flex;align-items:center;gap:9px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px}
-body.qforge-site .faq-filter-items button{border:1px solid #cbd5cd;padding:9px 13px;background:#fff;color:#59605a;font:500 11px/1.5 var(--mono);border-radius:2px;cursor:pointer}
+body.qforge-site .faq-filter-items button{border:1px solid #cbd5cd;padding:9px 13px;background:#fff;color:#59605a;font:500 11px/1.5 var(--mono);border-radius:6px;cursor:pointer}
 body.qforge-site .faq-filter-items button:hover{border-color:#00885a}
 body.qforge-site .faq-filter-items button.selected{background:#0b120e;color:#fff;border-color:#0b120e}
 body.qforge-site .faq-filter-version{margin-left:auto;font:500 10px/1.5 var(--mono);color:#59605a;white-space:nowrap}
 body.qforge-site .faq-filter-version:first-letter{color:#00885a}
 body.qforge-site .faq-main-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:40px;padding-top:64px;padding-bottom:70px}
-body.qforge-site .faq-arch-card{border:1px solid #e2e8e3;background:#fff;padding:24px 25px 26px;border-radius:2px}
+body.qforge-site .faq-arch-card{border:1px solid #e2e8e3;background:#fff;padding:24px 25px 26px;border-radius:6px}
 body.qforge-site .faq-arch-card h2{font-size:19px;margin:20px 0 15px}
 body.qforge-site .faq-arch-card>p{font:15px/1.7 var(--font);color:#59605a;padding-bottom:20px;border-bottom:1px solid #e2e8e3}
 body.qforge-site .faq-arch-feature{margin-top:16px;padding-left:5px}
@@ -218,7 +223,7 @@ body.qforge-site .faq-heading-row h2{font-size:24px;margin:0 0 6px}
 body.qforge-site .faq-heading-row p{font:13px/1.6 var(--font);color:#59605a;margin:0}
 body.qforge-site .faq-heading-row>button{border:0;background:transparent;color:#59605a;text-decoration:underline;font:11px/1.6 var(--mono);cursor:pointer;white-space:nowrap;padding:7px 0}
 body.qforge-site .faq-accordion{display:grid;gap:12px}
-body.qforge-site .faq-item{border:1px solid #dfe6df;background:#fff;border-radius:2px;padding:0}
+body.qforge-site .faq-item{border:1px solid #dfe6df;background:#fff;border-radius:6px;padding:0}
 body.qforge-site .faq-item[hidden]{display:none}
 body.qforge-site .faq-item summary{display:flex;align-items:center;gap:15px;padding:21px 22px;cursor:pointer;list-style:none;font:700 16px/1.45 var(--heading-font);letter-spacing:-.01em}
 body.qforge-site .faq-item summary::-webkit-details-marker{display:none}
@@ -229,7 +234,7 @@ body.qforge-site .faq-item[open] .faq-toggle-mark{transform:rotate(45deg)}
 body.qforge-site .faq-answer{border-top:1px solid #e2e8e3;margin:0 22px;padding:17px 0 20px}
 body.qforge-site .faq-answer p{font:14px/1.7 var(--font);color:#59605a;margin:0}
 body.qforge-site .faq-support{padding:0 24px!important;margin-bottom:70px}
-body.qforge-site .faq-support>div{background:#0b120e;border-radius:3px;color:#fff;padding:48px;min-height:315px}
+body.qforge-site .faq-support>div{background:#0b120e;border-radius:8px;color:#fff;padding:48px;min-height:315px}
 body.qforge-site .faq-support .section-number{color:#8cf8c0}
 body.qforge-site .faq-support h2{font-size:40px;max-width:640px;margin:14px 0}
 body.qforge-site .faq-support p{font:15px/1.7 var(--font);color:#aab7ad;max-width:600px;margin:0}
@@ -245,7 +250,7 @@ body.qforge-site .guide-meta-ribbon{margin-top:24px;padding-top:23px;max-width:7
 body.qforge-site .guide-meta-ribbon b{color:#0b120e}
 body.qforge-site .guide-meta-ribbon i{font-style:normal;color:#cbd5cd}
 body.qforge-site .content-layout{grid-template-columns:272px minmax(0,1fr);gap:48px;padding-top:46px;padding-bottom:80px}
-body.qforge-site .toc{background:#fff;border:1px solid #e2e8e3;padding:21px;top:90px;align-self:start;border-radius:2px;gap:4px}
+body.qforge-site .toc{background:#fff;border:1px solid #e2e8e3;padding:21px;top:90px;align-self:start;border-radius:6px;gap:4px}
 body.qforge-site .toc strong{font:700 11px/1.5 var(--mono);letter-spacing:.1em;color:#59605a;margin-bottom:12px}
 body.qforge-site .toc a{border:0;font:500 12px/1.65 var(--font);color:#59605a;padding:10px 9px}
 body.qforge-site .toc a:hover,body.qforge-site .toc a.active{background:#e6eee7;color:#006c47;border:0;border-left:2px solid #006c47;padding-left:7px}
@@ -261,17 +266,20 @@ body.qforge-site .article p,body.qforge-site .article li{font:14px/1.75 var(--fo
 body.qforge-site .guide-article>section>ol{list-style:none;counter-reset:qf;display:grid;gap:12px;padding:0;margin:25px 0}
 body.qforge-site .guide-article>section>ol>li{counter-increment:qf;position:relative;padding:20px 18px 20px 56px;border:1px solid #e2e8e3;background:#fff;margin:0;min-height:62px;color:#0b120e}
 body.qforge-site .guide-article>section>ol>li:before{content:counter(qf,decimal-leading-zero);position:absolute;left:17px;top:21px;color:#006c47;background:#e6eee7;padding:4px 6px;font:700 11px/1.5 var(--mono)}
-body.qforge-site .article code{font:12px/1.5 var(--mono);background:#f0eee6;border-radius:2px;border:1px solid #e2e8e3;word-break:break-word}
-body.qforge-site .guide-article .callout{border:1px solid #b9ddc6;border-left:3px solid #00885a;border-radius:2px;background:#eaf5ec;padding:20px 24px}
+body.qforge-site .article code{font:12px/1.5 var(--mono);background:#f0eee6;border-radius:6px;border:1px solid #e2e8e3;word-break:break-word}
+body.qforge-site .guide-article .callout{border:1px solid #b9ddc6;border-left:3px solid #00885a;border-radius:6px;background:#eaf5ec;padding:20px 24px}
 body.qforge-site .guide-article .warning{border-color:#e2dcc1;border-left-color:#a9812f;background:#f7f3e9}
-body.qforge-site .download-box{background:#fff;border:1px solid #e2e8e3;padding:28px 30px;display:flex;gap:10px;position:relative;border-radius:2px;margin:25px 0}
+body.qforge-site .download-box{background:#fff;border:1px solid #e2e8e3;padding:28px 30px;display:flex;gap:10px;position:relative;border-radius:6px;margin:25px 0}
 body.qforge-site .download-box>strong{font:700 21px/1.35 var(--heading-font);color:#0b120e}
 body.qforge-site .download-box .button{font:600 12px/1.5 var(--mono);align-self:flex-start;padding:12px 16px;min-height:44px}
 body.qforge-site .download-box .filemeta{font:12px/1.65 var(--font);color:#59605a}
-body.qforge-site .copy-sha{cursor:pointer;align-self:flex-start;border:1px solid #cbd5cd;background:#fff;padding:7px 12px;border-radius:2px;color:#0b120e;font:600 11px var(--mono)}
+body.qforge-site .copy-sha{cursor:pointer;align-self:flex-start;border:1px solid #cbd5cd;background:#fff;padding:7px 12px;border-radius:6px;color:#0b120e;font:600 11px var(--mono)}
 body.qforge-site .guide-screens{gap:16px}
-body.qforge-site .guide-screen{border:1px solid #e2e8e3;background:#f0eee6;border-radius:3px}
+body.qforge-site .guide-screen{border:1px solid #e2e8e3;background:#f0eee6;border-radius:8px}
 body.qforge-site .guide-screen figcaption{padding:15px 16px 14px}
+body.qforge-site .guide-screen img.theme-dark-only{display:none}
+:root[data-theme=dark] body.qforge-site .guide-screen img.theme-light-only{display:none}
+:root[data-theme=dark] body.qforge-site .guide-screen img.theme-dark-only{display:block}
 /* privacy/contact/404 reuse the Figma system without replacing factual copy */
 body.qforge-site .figma-subpage-hero{padding:65px 0 60px;background:#f4fcf2;border-bottom:1px solid #e2e8e3}
 body.qforge-site .figma-subpage-hero h1{font:700 clamp(34px,3.25vw,44px)/1.12 var(--heading-font);letter-spacing:-.03em;margin:20px 0 15px}
@@ -280,9 +288,9 @@ body.qforge-site.page-privacy .toc{position:sticky}
 body.qforge-site.page-privacy .article section{border-bottom:1px solid #e2e8e3;padding-bottom:35px}
 body.qforge-site.page-privacy .article h2{font-size:27px}
 body.qforge-site.page-contact .section{padding:70px 0}
-body.qforge-site.page-contact .contact-card{border-radius:3px;border-color:#e2e8e3;box-shadow:none}
-body.qforge-site.page-contact .support-panel{background:#f0eee6;border:1px solid #e2e8e3;border-radius:4px}
-body.qforge-site.page-contact .gcash-donation{border-radius:4px}
+body.qforge-site.page-contact .contact-card{border-radius:8px;border-color:#e2e8e3;box-shadow:none}
+body.qforge-site.page-contact .support-panel{background:#f0eee6;border:1px solid #e2e8e3;border-radius:8px}
+body.qforge-site.page-contact .gcash-donation{border-radius:8px}
 body.qforge-site.page-404 .section{padding:45px 0 100px}
 /* dark theme: maintain equivalent semantic palette and visible CTA */
 :root[data-theme=dark] body.qforge-site{--ink:#f0f5f0;--text:#f0f5f0;--muted:#bccac0;--light:#101813;--paper:#19231d;--border:#344237;--green:#8cf8c0;--green-dark:#8cf8c0;--qf-surface:#111a14;--qf-cream:#1b2820;background:#111a14;color:#f0f5f0}
@@ -346,11 +354,11 @@ body.qforge-site.page-404 .section{padding:45px 0 100px}
   body.qforge-site .header-inner{min-height:64px}
   body.qforge-site .header-download{display:none}
   body.qforge-site .nav-cta-mobile{display:inline-flex!important}
-  body.qforge-site .menu-toggle{order:4;display:inline-flex;align-items:center;gap:6px;border-radius:2px;border-color:#cbd5cd;background:transparent}
+  body.qforge-site .menu-toggle{order:4;display:inline-flex;align-items:center;gap:6px;border-radius:6px;border-color:#cbd5cd;background:transparent}
   body.qforge-site .theme-switch{order:3;margin-left:auto}
   body.qforge-site .nav{margin:0;gap:0;padding:14px 0;top:64px;flex-direction:column;align-items:stretch}
   body.qforge-site .nav a:not(.nav-cta){font-size:13px;padding:12px 18px}
-  body.qforge-site .nav-cta-mobile{border-radius:2px;margin:10px 14px}
+  body.qforge-site .nav-cta-mobile{border-radius:6px;margin:10px 14px}
   body.qforge-site .home-rail-grid{grid-template-columns:1fr}
   body.qforge-site .home-rail-grid>div{min-height:52px;padding:10px 0!important;border:0;border-bottom:1px solid #334037}
   body.qforge-site .home-rail-grid>div:last-child{border:0}
@@ -474,7 +482,7 @@ body.qforge-site .release-card-tag {
   letter-spacing: 0;
   padding: 4px 7px;
   margin-left: 8px;
-  border-radius: 2px;
+  border-radius: 6px;
 }
 body.qforge-site .release-card-overview p {
   font: 13px/1.75 var(--font);
@@ -506,7 +514,7 @@ body.qforge-site .release-card-checksum {
   padding: 19px 20px;
   border: 1px solid #e2e8e3;
   background: #f4f7f3;
-  border-radius: 2px;
+  border-radius: 6px;
   min-width: 0;
 }
 body.qforge-site .release-card-hash-details {
@@ -571,7 +579,7 @@ body.qforge-site .home-demo-display[data-view=export] .home-demo-image-wrap img#
   object-fit: initial;
   object-position: top center;
   border: 0;
-  border-radius: 0;
+  border-radius: 8px;
   box-shadow: none;
 }
 body.qforge-site .home-demo-bottom {padding:15px 0 0;border:0}

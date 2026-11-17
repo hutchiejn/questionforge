@@ -1,0 +1,188 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "QuestionForge home" [ref=e5] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=e6]: QuestionForge
+      - navigation "Main navigation" [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: index.html
+        - link "How it works" [ref=e9] [cursor=pointer]:
+          - /url: guide.html
+        - link "FAQ" [ref=e10] [cursor=pointer]:
+          - /url: faq.html
+        - link "Privacy" [ref=e11] [cursor=pointer]:
+          - /url: privacy.html
+        - link "Contact" [ref=e12] [cursor=pointer]:
+          - /url: contact.html
+      - generic [ref=e13]: v0.8.4 Beta
+      - button "Switch to dark mode" [ref=e14] [cursor=pointer]:
+        - generic [ref=e17]: Change color theme
+      - link "Get QuestionForge" [ref=e18] [cursor=pointer]:
+        - /url: guide.html#install
+        - text: Get QuestionForge
+        - generic [aria-hidden] [ref=e19]: ↗
+  - main [ref=e20]:
+    - generic [ref=e22]:
+      - generic [ref=e23]: ● HELP CENTER
+      - heading "Answers, without the guesswork." [level=1] [ref=e24]
+      - paragraph [ref=e25]: Quick answers to questions about using QuestionForge, document support, and local-first privacy.
+      - generic [ref=e26]:
+        - generic [ref=e27]: "Quick links:"
+        - link "Install extension ↗" [ref=e28] [cursor=pointer]:
+          - /url: guide.html#install
+        - link "Prepare questions ↗" [ref=e29] [cursor=pointer]:
+          - /url: guide.html#workflow
+        - link "Privacy policy ↗" [ref=e30] [cursor=pointer]:
+          - /url: privacy.html
+        - link "Contact ↗" [ref=e31] [cursor=pointer]:
+          - /url: contact.html
+    - group "Filter FAQ topics" [ref=e33]:
+      - button "All Questions (11)" [pressed] [ref=e34] [cursor=pointer]
+      - button "General & Cost" [ref=e35] [cursor=pointer]
+      - button "Privacy & Security" [ref=e36] [cursor=pointer]
+      - button "Supported Documents" [ref=e37] [cursor=pointer]
+      - button "AI Chatbot Workflow" [ref=e38] [cursor=pointer]
+      - button "Exporting & Formats" [ref=e39] [cursor=pointer]
+      - generic [ref=e40]: ● Verified for v0.8.4 Beta
+    - generic [ref=e41]:
+      - complementary [ref=e42]:
+        - generic [ref=e43]:
+          - text: 01 / ARCHITECTURE OVERVIEW
+          - heading "Local-first client mechanics." [level=2] [ref=e44]
+          - paragraph [ref=e45]: QuestionForge operates entirely inside your Google Chrome sandbox. No accounts, zero remote database synchronizations, and deterministic question verification.
+          - generic [ref=e46]:
+            - text: ♢ Zero Cloud Sync
+            - generic [ref=e47]: Teaching files are read strictly in-memory within Chrome.
+          - generic [ref=e48]:
+            - text: ▣ Structured Parsing
+            - generic [ref=e49]: Deterministic JSON prompt schemas eliminate hallucinated outputs.
+          - generic [ref=e50]:
+            - text: ▤ True Typesetting
+            - generic [ref=e51]: Pre-formatted Word DOCX and 1-or-2 column print-ready PDFs.
+        - generic [ref=e52]:
+          - text: ⓘ Independent Project
+          - paragraph [ref=e53]: Not affiliated with, sponsored, or endorsed by AI providers or browser vendors. Created for educators needing clean, unencumbered assessment formatting.
+          - link "View GitHub portfolio ↗" [ref=e54] [cursor=pointer]:
+            - /url: https://github.com/xf00889
+      - region "Frequently asked questions" [ref=e55]:
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - heading "Frequently asked questions" [level=2] [ref=e58]
+            - paragraph [ref=e59]: Answers to common setup, privacy, document import, and exam formatting questions.
+          - button "Expand all" [ref=e60] [cursor=pointer]
+        - generic [ref=e61]:
+          - group [ref=e62]:
+            - generic "01 Does QuestionForge cost anything?" [ref=e63] [cursor=pointer]:
+              - generic [ref=e64]: "01"
+              - generic [ref=e65]: Does QuestionForge cost anything?
+              - generic [aria-hidden] [ref=e66]: +
+            - paragraph [ref=e68]: No. QuestionForge is free to use. Optional GCash support is available on the Contact page, but donating is completely voluntary and all features remain free.
+          - group [ref=e69]:
+            - generic "02 Do I need a paid AI chatbot plan or an API key?" [ref=e70] [cursor=pointer]:
+              - generic [ref=e71]: "02"
+              - generic [ref=e72]: Do I need a paid AI chatbot plan or an API key?
+              - generic [aria-hidden] [ref=e73]: +
+          - group [ref=e74]:
+            - generic "03 Does QuestionForge upload my lesson plans?" [ref=e75] [cursor=pointer]:
+              - generic [ref=e76]: "03"
+              - generic [ref=e77]: Does QuestionForge upload my lesson plans?
+              - generic [aria-hidden] [ref=e78]: +
+          - group [ref=e79]:
+            - generic "04 Can I upload scanned PDFs?" [ref=e80] [cursor=pointer]:
+              - generic [ref=e81]: "04"
+              - generic [ref=e82]: Can I upload scanned PDFs?
+              - generic [aria-hidden] [ref=e83]: +
+          - group [ref=e84]:
+            - generic "05 Can I use a BOW and TOS together?" [ref=e85] [cursor=pointer]:
+              - generic [ref=e86]: "05"
+              - generic [ref=e87]: Can I use a BOW and TOS together?
+              - generic [aria-hidden] [ref=e88]: +
+          - group [ref=e89]:
+            - generic "06 How are my questions and answers saved?" [ref=e90] [cursor=pointer]:
+              - generic [ref=e91]: "06"
+              - generic [ref=e92]: How are my questions and answers saved?
+              - generic [aria-hidden] [ref=e93]: +
+          - group [ref=e94]:
+            - generic "07 What formats can I export?" [ref=e95] [cursor=pointer]:
+              - generic [ref=e96]: "07"
+              - generic [ref=e97]: What formats can I export?
+              - generic [aria-hidden] [ref=e98]: +
+          - group [ref=e99]:
+            - generic "08 Why does the number of imported questions look wrong?" [ref=e100] [cursor=pointer]:
+              - generic [ref=e101]: "08"
+              - generic [ref=e102]: Why does the number of imported questions look wrong?
+              - generic [aria-hidden] [ref=e103]: +
+          - group [ref=e104]:
+            - generic "09 Why does the extension ask me to send materials in parts?" [ref=e105] [cursor=pointer]:
+              - generic [ref=e106]: "09"
+              - generic [ref=e107]: Why does the extension ask me to send materials in parts?
+              - generic [aria-hidden] [ref=e108]: +
+          - group [ref=e109]:
+            - generic "10 Is QuestionForge affiliated with an AI provider or browser vendor?" [ref=e110] [cursor=pointer]:
+              - generic [ref=e111]: "10"
+              - generic [ref=e112]: Is QuestionForge affiliated with an AI provider or browser vendor?
+              - generic [aria-hidden] [ref=e113]: +
+          - group [ref=e114]:
+            - generic "11 How do I contact the developer?" [ref=e115] [cursor=pointer]:
+              - generic [ref=e116]: "11"
+              - generic [ref=e117]: How do I contact the developer?
+              - generic [aria-hidden] [ref=e118]: +
+    - generic [ref=e120]:
+      - text: NEED DIRECT ASSISTANCE?
+      - heading "Still need help? Visit Contact & Support." [level=2] [ref=e121]
+      - paragraph [ref=e122]: Have an edge case document format, caught a parsing quirk, or want to suggest an export layout? Our developer channels are open.
+      - generic [ref=e123]:
+        - link "✉ Contact & Support ↗" [ref=e124] [cursor=pointer]:
+          - /url: contact.html
+        - link "▣ GitHub Developer Portfolio ↗" [ref=e125] [cursor=pointer]:
+          - /url: https://github.com/xf00889
+  - contentinfo [ref=e126]:
+    - generic [ref=e127]:
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - link "QuestionForge" [ref=e130] [cursor=pointer]:
+            - /url: index.html
+          - paragraph [ref=e132]: A free, local-first question paper studio for teachers, learners, and the people who support them.
+          - text: Independent project · Not affiliated with AI providers or browser vendors
+        - generic [ref=e133]:
+          - heading "Product" [level=4] [ref=e134]
+          - generic [ref=e135]:
+            - link "Getting started" [ref=e136] [cursor=pointer]:
+              - /url: guide.html
+            - link "Exam workflow" [ref=e137] [cursor=pointer]:
+              - /url: guide.html#workflow
+            - link "Export guide" [ref=e138] [cursor=pointer]:
+              - /url: guide.html#document-export
+            - link "FAQs" [ref=e139] [cursor=pointer]:
+              - /url: faq.html
+        - generic [ref=e140]:
+          - heading "Information" [level=4] [ref=e141]
+          - generic [ref=e142]:
+            - link "Privacy policy" [ref=e143] [cursor=pointer]:
+              - /url: privacy.html
+            - link "Contact & support" [ref=e144] [cursor=pointer]:
+              - /url: contact.html
+            - link "Known limitations" [ref=e145] [cursor=pointer]:
+              - /url: guide.html#limitations
+        - generic [ref=e146]:
+          - heading "Developer" [level=4] [ref=e147]
+          - generic [ref=e148]:
+            - link "GitHub portfolio ↗" [ref=e149] [cursor=pointer]:
+              - /url: https://github.com/xf00889
+            - link "Email support ↗" [ref=e150] [cursor=pointer]:
+              - /url: mailto:hutchiejn@gmail.com
+        - generic [ref=e151]:
+          - heading "Support" [level=4] [ref=e152]
+          - generic [ref=e153]:
+            - link "Donate via GCash ↗" [ref=e154] [cursor=pointer]:
+              - /url: contact.html#support-the-project
+            - generic [ref=e155]: Completely optional. All features stay free.
+      - generic [ref=e156]:
+        - generic [ref=e157]: © 2026 QuestionForge. Built for simpler assessment preparation.
+        - generic [ref=e158]:
+          - text: Website and extension v0.8.4 information ·
+          - link "Privacy" [ref=e159] [cursor=pointer]:
+            - /url: privacy.html

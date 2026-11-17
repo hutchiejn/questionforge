@@ -1,0 +1,290 @@
+- generic [active] [ref=f1e1]:
+  - link "Skip to content" [ref=f1e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f1e3]:
+    - generic [ref=f1e4]:
+      - link "QuestionForge home" [ref=f1e5] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=f1e6]: QuestionForge
+      - navigation "Main navigation" [ref=f1e7]:
+        - link "Home" [ref=f1e8] [cursor=pointer]:
+          - /url: index.html
+        - link "How it works" [ref=f1e9] [cursor=pointer]:
+          - /url: guide.html
+        - link "FAQ" [ref=f1e10] [cursor=pointer]:
+          - /url: faq.html
+        - link "Privacy" [ref=f1e11] [cursor=pointer]:
+          - /url: privacy.html
+        - link "Contact" [ref=f1e12] [cursor=pointer]:
+          - /url: contact.html
+      - generic [ref=f1e13]: v0.8.4 Beta
+      - button "Switch to light mode" [pressed] [ref=f1e14] [cursor=pointer]:
+        - generic [ref=f1e18]: Change color theme
+      - link "Get QuestionForge" [ref=f1e19] [cursor=pointer]:
+        - /url: guide.html#install
+        - text: Get QuestionForge
+        - generic [aria-hidden] [ref=f1e20]: ↗
+  - main [ref=f1e21]:
+    - generic [ref=f1e23]:
+      - text: USER GUIDE
+      - heading "Everything you need to get started." [level=1] [ref=f1e24]
+      - paragraph [ref=f1e25]: Step-by-step instructions for preparing source-based assessments, validating question sets, and exporting professional documents.
+      - generic [ref=f1e26]:
+        - generic [ref=f1e27]: "Engine: Local Manifest V3"
+        - generic [ref=f1e28]: •
+        - generic [ref=f1e29]: "Security: Zero Cloud Storage"
+        - generic [ref=f1e30]: •
+        - generic [ref=f1e31]: "Format: Deterministic JSON / DOCX"
+    - generic [ref=f1e32]:
+      - complementary "On this page" [ref=f1e33]:
+        - strong [ref=f1e34]: On this page
+        - link "Install the extension" [ref=f1e35] [cursor=pointer]:
+          - /url: "#install"
+        - link "Prepare teaching materials & prompts" [ref=f1e36] [cursor=pointer]:
+          - /url: "#workflow"
+        - link "Import and review questions" [ref=f1e37] [cursor=pointer]:
+          - /url: "#question-review"
+        - link "Export Word and PDF" [ref=f1e38] [cursor=pointer]:
+          - /url: "#document-export"
+        - link "Privacy & safety controls" [ref=f1e39] [cursor=pointer]:
+          - /url: "#privacy-controls"
+        - link "Known limitations" [ref=f1e40] [cursor=pointer]:
+          - /url: "#limitations"
+        - generic [ref=f1e41]:
+          - text: ▣ ENVIRONMENT NOTES
+          - paragraph [ref=f1e42]: Installing the Chrome extension requires a desktop computer with developer unpack privileges enabled.
+      - article [ref=f1e43]:
+        - generic [ref=f1e44]:
+          - generic [ref=f1e45]: 01 / INSTALL
+          - heading "Install QuestionForge in Chrome" [level=2] [ref=f1e46]
+          - paragraph [ref=f1e47]:
+            - text: QuestionForge v0.8.4 is a
+            - strong [ref=f1e48]: production-packaged developer preview
+            - text: . It is not represented here as a published Chrome Web Store extension. You can install it locally using Chrome's Load unpacked feature.
+          - generic [ref=f1e49]:
+            - generic [ref=f1e50]:
+              - generic [ref=f1e51]:
+                - generic [ref=f1e52]: LATEST RELEASE / CHROME EXTENSION
+                - heading "QuestionForge v0.8.4 Production build" [level=3] [ref=f1e53]:
+                  - text: QuestionForge v0.8.4
+                  - generic [ref=f1e54]: Production build
+                - paragraph [ref=f1e55]: Installable release with bundled JavaScript, icons, document tools, and GCash support. Development code and tests are not included.
+              - link "Download Chrome extension ZIP" [ref=f1e56] [cursor=pointer]:
+                - /url: downloads/QuestionForge-v0.8.4-production.zip
+                - text: Download Chrome extension ZIP
+                - generic [aria-hidden] [ref=f1e57]: ↓
+            - generic [ref=f1e58]:
+              - generic [ref=f1e59]:
+                - generic [ref=f1e60]: SHA-256 CHECKSUM
+                - code [ref=f1e61]: 036d321b10e65f4041581353d51efc2904f4927038144c8b4cdef691a8527b51
+              - button "Copy SHA-256 checksum" [ref=f1e62] [cursor=pointer]: Copy hash
+            - paragraph [ref=f1e63]: This public build is minified and excludes development tests and source maps. It remains inspectable in Chrome.
+          - list [ref=f1e64]:
+            - listitem [ref=f1e65]: Download the extension ZIP above and extract it to a folder.
+            - listitem [ref=f1e66]:
+              - text: Open
+              - code [ref=f1e67]: chrome://extensions
+              - text: in Chrome.
+            - listitem [ref=f1e68]:
+              - text: Enable
+              - strong [ref=f1e69]: Developer mode
+              - text: .
+            - listitem [ref=f1e70]:
+              - text: Click
+              - strong [ref=f1e71]: Load unpacked
+              - text: and select the extracted
+              - code [ref=f1e72]: questionforge-extension
+              - text: folder containing
+              - code [ref=f1e73]: manifest.json
+              - text: .
+            - listitem [ref=f1e74]: Pin QuestionForge in the Chrome toolbar and open its side panel.
+          - paragraph [ref=f1e76]: Only load unpacked extensions from sources you trust. These installation steps are for testing while a Web Store listing is not available.
+        - generic [ref=f1e77]:
+          - generic [ref=f1e78]: 02 / PREPARE
+          - heading "Build an exam from teaching materials" [level=2] [ref=f1e79]
+          - paragraph [ref=f1e80]: Use this guided workflow when you have a lesson plan, Budget of Work (BOW), Table of Specifications (TOS), or curriculum guide.
+          - list [ref=f1e81]:
+            - listitem [ref=f1e82]:
+              - text: Open
+              - strong [ref=f1e83]: 00 Prompt
+              - text: and select the source type.
+            - listitem [ref=f1e84]:
+              - text: Choose
+              - strong [ref=f1e85]: Import files
+              - text: ","
+              - strong [ref=f1e86]: Paste text
+              - text: ", or"
+              - strong [ref=f1e87]: Attach in ChatGPT
+              - text: .
+            - listitem [ref=f1e88]: For local import, verify the structured content against the original document. Approve only information you have checked.
+            - listitem [ref=f1e89]: Confirm detected grade, subject, quarter, and school where available. Set question counts and cognitive levels.
+            - listitem [ref=f1e90]:
+              - text: Copy the
+              - strong [ref=f1e91]: coverage planning prompt
+              - text: into ChatGPT. If the content is long, copy and confirm numbered source packets in order.
+            - listitem [ref=f1e92]:
+              - text: Review the proposed coverage plan. Only when satisfied, check approval and copy the
+              - strong [ref=f1e93]: exam generation prompt
+              - text: .
+            - listitem [ref=f1e94]: Request structured JSON, copy it into QuestionForge, and validate the imported questions.
+          - paragraph [ref=f1e96]: QuestionForge creates prompts; ChatGPT generates the questions. QuestionForge itself has no AI API, and you decide what source text to paste into ChatGPT.
+          - heading "What if extraction fails?" [level=3] [ref=f1e97]
+          - paragraph [ref=f1e98]: Some PDFs are scanned, encrypted, or have complex reading order. The current extension does not include automatic OCR. When PDF extraction is uncertain, use a DOCX/XLSX source where available or paste text you have manually verified.
+          - heading "Large documents" [level=3] [ref=f1e99]
+          - paragraph [ref=f1e100]: QuestionForge can break reviewed content into numbered packets, but copying every packet doesn't guarantee ChatGPT will retain it all. For very large sources, select a smaller teacher-approved subset and verify the resulting coverage plan.
+        - generic [ref=f1e101]:
+          - generic [ref=f1e102]: 03 / REVIEW & CURATE
+          - heading "Review questions before export" [level=2] [ref=f1e103]
+          - paragraph [ref=f1e104]:
+            - text: Go to
+            - strong [ref=f1e105]: 01 Import
+            - text: and paste the generated assessment or import a supported structured JSON file. The JSON format is recommended because it keeps question types and answers together.
+          - list [ref=f1e106]:
+            - listitem [ref=f1e107]: Parse the questions.
+            - listitem [ref=f1e108]:
+              - text: Open
+              - strong [ref=f1e109]: 02 Review
+              - text: to check the total, type distribution, and warnings.
+            - listitem [ref=f1e110]: Edit wording, options, correct answers, question type, points, or order.
+            - listitem [ref=f1e111]: Use the formatting-repair prompt if ChatGPT returned malformed or inconsistent JSON, then re-import and validate again.
+          - generic "Three stages of QuestionForge" [ref=f1e112]:
+            - figure "01 / PREPARE Prepare the prompt" [ref=f1e113]:
+              - generic [ref=f1e114]:
+                - generic [ref=f1e115]: 01 / PREPARE
+                - strong [ref=f1e116]: Prepare the prompt
+              - img "QuestionForge Prompt tab, showing teaching-material import and coverage-plan preparation" [ref=f1e117]
+            - figure "02 / REVIEW Check every question" [ref=f1e118]:
+              - generic [ref=f1e119]:
+                - generic [ref=f1e120]: 02 / REVIEW
+                - strong [ref=f1e121]: Check every question
+              - img "QuestionForge Review tab with question counts and an editable question bank" [ref=f1e122]
+            - figure "03 / EXPORT Choose your page layout" [ref=f1e123]:
+              - generic [ref=f1e124]:
+                - generic [ref=f1e125]: 03 / EXPORT
+                - strong [ref=f1e126]: Choose your page layout
+              - img "QuestionForge Export tab with the correct QF logo, page margins and column settings" [ref=f1e127]
+          - paragraph [ref=f1e129]: Generated questions and answer keys can contain mistakes. A teacher or reviewer should verify content accuracy and curriculum alignment before distribution.
+        - generic [ref=f1e130]:
+          - generic [ref=f1e131]: 04 / FORMATTING
+          - heading "Format the finished assessment" [level=2] [ref=f1e132]
+          - paragraph [ref=f1e133]:
+            - text: In
+            - strong [ref=f1e134]: 03 Export
+            - text: you can configure a document title, school, subject, instructions, and the paper layout.
+          - list [ref=f1e135]:
+            - listitem [ref=f1e136]:
+              - strong [ref=f1e137]: "Modes:"
+              - text: student paper or teacher version with answer key.
+            - listitem [ref=f1e138]:
+              - strong [ref=f1e139]: "Paper:"
+              - text: A4, Letter, or Legal.
+            - listitem [ref=f1e140]:
+              - strong [ref=f1e141]: "Typography:"
+              - text: font, size, and line spacing.
+            - listitem [ref=f1e142]:
+              - strong [ref=f1e143]: "Layout:"
+              - text: normal, narrow, moderate, or wide margins, and one or two question columns.
+            - listitem [ref=f1e144]:
+              - strong [ref=f1e145]: "Branding:"
+              - text: institution logo (under one inch), custom page header and footer, and page numbering.
+          - heading "Export to Word" [level=3] [ref=f1e146]
+          - paragraph [ref=f1e147]:
+            - text: Choose
+            - strong [ref=f1e148]: Download Word
+            - text: to generate an editable
+            - code [ref=f1e149]: .docx
+            - text: file. Check its page breaks before printing.
+          - heading "Save as PDF" [level=3] [ref=f1e150]
+          - paragraph [ref=f1e151]:
+            - text: Choose
+            - strong [ref=f1e152]: Print / save as PDF
+            - text: ", then select Chrome's"
+            - strong [ref=f1e153]: Save as PDF
+            - text: destination. For QuestionForge's margins, use Chrome's default print margins and disable Chrome's additional headers and footers to avoid duplicates.
+          - paragraph [ref=f1e155]: The title and answer key remain full-width in two-column mode. Long essay responses may still be easier to read in one column.
+        - generic [ref=f1e156]:
+          - generic [ref=f1e157]: 05 / DEVELOPMENT
+          - heading "Keep control of local data" [level=2] [ref=f1e158]
+          - list [ref=f1e159]:
+            - listitem [ref=f1e160]:
+              - strong [ref=f1e161]: "Drafts:"
+              - text: optional Chrome local storage, not encrypted by QuestionForge.
+            - listitem [ref=f1e162]:
+              - strong [ref=f1e163]: "Retention:"
+              - text: choose 7, 30, or 90 days, or no automatic expiration; default is 30 inactive days, checked when the extension next opens.
+            - listitem [ref=f1e164]:
+              - strong [ref=f1e165]: "No-save mode:"
+              - text: turn draft saving off for sensitive examination materials.
+            - listitem [ref=f1e166]:
+              - strong [ref=f1e167]: "Clear data:"
+              - text: delete saved QuestionForge extension data from Privacy & security.
+            - listitem [ref=f1e168]:
+              - strong [ref=f1e169]: "Sharing:"
+              - text: only copy teaching content to an AI service after reviewing it and removing unnecessary personal information.
+          - paragraph [ref=f1e170]:
+            - text: For more detail, read the
+            - link "full privacy policy" [ref=f1e171] [cursor=pointer]:
+              - /url: privacy.html
+            - text: .
+        - generic [ref=f1e172]:
+          - generic [ref=f1e173]: 06 / CONSTRAINTS
+          - heading "What the extension does not do" [level=2] [ref=f1e174]
+          - list [ref=f1e175]:
+            - listitem [ref=f1e176]: It does not generate AI questions by itself.
+            - listitem [ref=f1e177]: It does not guarantee perfect extraction from scans, complex PDFs, or mathematical layouts.
+            - listitem [ref=f1e178]: It does not guarantee question correctness; users must review the assessment.
+            - listitem [ref=f1e179]: It does not encrypt locally saved drafts.
+            - listitem [ref=f1e180]: It cannot guarantee that external AI services retain all pasted source packets.
+            - listitem [ref=f1e181]: It does not process GCash payments or confirm donations.
+          - paragraph [ref=f1e182]:
+            - text: Need help?
+            - link "Contact support" [ref=f1e183] [cursor=pointer]:
+              - /url: contact.html
+            - text: with the browser version, extension version, and a description of the issue—without including private student records.
+  - contentinfo [ref=f1e184]:
+    - generic [ref=f1e185]:
+      - generic [ref=f1e186]:
+        - generic [ref=f1e187]:
+          - link "QuestionForge" [ref=f1e188] [cursor=pointer]:
+            - /url: index.html
+          - paragraph [ref=f1e190]: A free, local-first question paper studio for teachers, learners, and the people who support them.
+          - text: Independent project · Not affiliated with OpenAI or Google
+        - generic [ref=f1e191]:
+          - heading "Product" [level=4] [ref=f1e192]
+          - generic [ref=f1e193]:
+            - link "Getting started" [ref=f1e194] [cursor=pointer]:
+              - /url: guide.html
+            - link "Exam workflow" [ref=f1e195] [cursor=pointer]:
+              - /url: guide.html#workflow
+            - link "Export guide" [ref=f1e196] [cursor=pointer]:
+              - /url: guide.html#document-export
+            - link "FAQs" [ref=f1e197] [cursor=pointer]:
+              - /url: faq.html
+        - generic [ref=f1e198]:
+          - heading "Information" [level=4] [ref=f1e199]
+          - generic [ref=f1e200]:
+            - link "Privacy policy" [ref=f1e201] [cursor=pointer]:
+              - /url: privacy.html
+            - link "Contact & support" [ref=f1e202] [cursor=pointer]:
+              - /url: contact.html
+            - link "Known limitations" [ref=f1e203] [cursor=pointer]:
+              - /url: guide.html#limitations
+        - generic [ref=f1e204]:
+          - heading "Developer" [level=4] [ref=f1e205]
+          - generic [ref=f1e206]:
+            - link "GitHub portfolio ↗" [ref=f1e207] [cursor=pointer]:
+              - /url: https://github.com/xf00889
+            - link "Email support ↗" [ref=f1e208] [cursor=pointer]:
+              - /url: mailto:hutchiejn@gmail.com
+        - generic [ref=f1e209]:
+          - heading "Support" [level=4] [ref=f1e210]
+          - generic [ref=f1e211]:
+            - link "Donate via GCash ↗" [ref=f1e212] [cursor=pointer]:
+              - /url: contact.html#support-the-project
+            - generic [ref=f1e213]: Completely optional. All features stay free.
+      - generic [ref=f1e214]:
+        - generic [ref=f1e215]: © 2026 QuestionForge. Built for simpler assessment preparation.
+        - generic [ref=f1e216]:
+          - text: Website and extension v0.8.4 information ·
+          - link "Privacy" [ref=f1e217] [cursor=pointer]:
+            - /url: privacy.html
