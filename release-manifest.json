@@ -4,7 +4,7 @@
   "files": [
     {
       "path": "404.html",
-      "sha256": "e5a9d88a9530941c97531209e7a34d6c5c4b8d9e62fce4d7f5708a680fca91a6"
+      "sha256": "79e86eb28994945c601c58d1c68d3f5732c685f69e2c4c502a61bab7e5d3e9ca"
     },
     {
       "path": "assets/accessibility-contrast.css",
@@ -140,7 +140,7 @@
     },
     {
       "path": "contact.html",
-      "sha256": "4c2d8892e3ccd2d88028566e8dd14c27e39bbdccc8e5c9129473c8379c865514"
+      "sha256": "c7168345dec3abbb1d6cd1878ddeacb2594da64d6fca6172d6cec26035dad59a"
     },
     {
       "path": "downloads/QuestionForge-v0.8.4-production.zip",
@@ -148,19 +148,19 @@
     },
     {
       "path": "faq.html",
-      "sha256": "88498a945f6c0f49b3ce1afd3127cb86a697e177ea305e7c13f4d46ab458a8ef"
+      "sha256": "cd6a562a14772f197c0d50bd62dfa913308458062a80f5e7b51d8d5914d0b3d5"
     },
     {
       "path": "guide.html",
-      "sha256": "9d0cb2499b25fd4866c935a56db1a3d2441d4a0cb4cf22daa62534feeaf26611"
+      "sha256": "e565890196546eaa0f15a8109525ffddf2fb8ceefc512de9d704538e20fec9fb"
     },
     {
       "path": "index.html",
-      "sha256": "d825cc4f6ea927ba0840b661cee8f568227cc56f3e188930fd590e1d333b414c"
+      "sha256": "f15bc691ad418ef81166b43a936a5b50dab2dc72d2654a0269f98543f25c2a59"
     },
     {
       "path": "privacy.html",
-      "sha256": "270f8983a1ce48c8a158c88a3a02c9903d76a54e45916771cfa3c3abb4084491"
+      "sha256": "0c66ade45d2fc53c2bc267c0cd40e160ff8f4871ccbad4aae10569991af1550c"
     },
     {
       "path": "release.json",

@@ -173,7 +173,7 @@ Read the full [Privacy Policy](public/privacy.html) before distributing the exte
 ## Support and project links
 
 - **Help and feedback:** [Contact & Support](public/contact.html)
-- **Developer profile:** [GitHub — xf00889](https://github.com/xf00889)
+- **Developer profile:** [GitHub — hutchiejn](https://github.com/hutchiejn)
 - **Optional GCash support:** [Donate via GCash](public/contact.html#support-the-project)
 
 When reporting a problem, include the QuestionForge and Chrome versions, steps to reproduce, and a screenshot **with private student or examination details removed**.
